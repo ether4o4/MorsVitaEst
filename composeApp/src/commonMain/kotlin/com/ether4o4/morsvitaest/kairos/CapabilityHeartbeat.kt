@@ -1,4 +1,4 @@
-package com.ether4o4.morsvitaest .morsvitaestros
+package com.ether4o4.morsvitaest.kairos
 
 object CapabilityHeartbeat {
     const val DEFAULT_DISCOVERY_TASK_DESCRIPTION = "Kairos capability discovery"

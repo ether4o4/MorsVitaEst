@@ -11,9 +11,10 @@ MorsVitaEst is not meant to be a single chatbot, a single model wrapper, or a on
 The near-term goal is a shippable Android app that keeps the strongest parts of the existing foundation while turning it into something clearly ours:
 
 - **Mobile-first AI runtime** for Android, with desktop and web kept as useful secondary targets
+- **Agent host support** for local models, Termux agents, PowerShell agents, MCP agents, human-approved workflows, and API-key-backed providers
 - **Local model support** through Ollama, Termux, OpenAI-compatible endpoints, and on-device engines where practical
 - **Multi-agent orchestration** based around five color-coded modes that can separate planning, safety, execution, memory, and creative synthesis
-- **Tool-capable action loop** for search, shell, files, notifications, scheduling, MCP servers, and local bridge commands
+- **Infrastructure-owned tool execution** for search, shell, files, notifications, scheduling, MCP servers, and local bridge commands
 - **Voice-ready interface** that can support spoken replies and agent-specific voice personalities
 - **Persistent personal context** that helps the system feel continuous without turning every detail into visible machinery
 - **Heartbeat behavior** for periodic self-checks, pending work, and quiet resurfacing of things that matter
@@ -92,8 +93,9 @@ MorsVitaEst is being shaped as an infrastructure app, not just a chat screen.
 Core systems:
 
 - **Conversation core**: normal chat, tool calls, model routing, attachments, generated UI
-- **Runtime core**: provider selection, local endpoint health, model capability metadata
-- **Tool core**: MCP servers, native tools, local bridge, shell/sandbox execution
+- **Agent host core**: API agents, local model agents, Termux agents, PowerShell agents, MCP agents, and human approval lanes
+- **Runtime core**: provider selection, local endpoint health, model capability metadata, runtime endpoint metadata
+- **Tool core**: infrastructure-owned MCP servers, native tools, local bridge, shell/sandbox execution, and per-agent authority
 - **Memory core**: personal context, preferences, lessons, durable continuity
 - **Heartbeat core**: periodic review, scheduled work, quiet reminders, background readiness
 - **Skill core**: installable capabilities with metadata, permissions, tests, and rollback paths
@@ -107,9 +109,11 @@ The deeper growth layer should stay quiet from the outside. The user sees useful
 
 - Android-first app identity under MorsVitaEst
 - Working chat with local and remote model providers
+- Hosted agent profiles for API, local model, Termux, PowerShell, sandbox, MCP, and human-mediated runtimes
 - Ollama/Termux endpoint setup and model discovery
 - Five-color agent mode selector and routing metadata
-- Local tool bridge for private shell, scrape, and voice workflows
+- Local tool bridge for private shell, fetch, and voice workflows
+- Infrastructure-owned tool authority with approval-required and autonomous modes
 - MCP server connection management
 - Memory, tasks, heartbeat, and settings import/export
 - Clear provider health checks and fallback behavior

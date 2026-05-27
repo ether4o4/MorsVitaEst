@@ -36,6 +36,7 @@ nav:
   - Getting Started: getting-started.md
   - Features:
     - Chat & Conversations: features/chat.md
+    - Kairos Infrastructure: features/kairos-infrastructure.md
     - Multi-Service: features/multi-service.md
     - Tools: features/tools.md
     - MCP Servers: features/mcp.md

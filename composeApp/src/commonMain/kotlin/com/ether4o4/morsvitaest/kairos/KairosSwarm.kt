@@ -1,4 +1,4 @@
-package com.ether4o4.morsvitaest .morsvitaestros
+package com.ether4o4.morsvitaest.kairos
 
 import kotlinx.serialization.Serializable
 

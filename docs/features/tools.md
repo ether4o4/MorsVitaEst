@@ -2,13 +2,13 @@
 
 **Last verified:** 2026-05-22
 
-MorsVitaEst's tools feature allows the AI to execute external functions during conversations — web search, notifications, calendar events, shell commands, memory operations, and more. Tools are defined with a schema, executed with safety guards, and managed through per-tool toggles in settings.
+MorsVitaEst's tools feature lets the infrastructure execute external functions during conversations and background workflows — web search, notifications, calendar events, shell commands, memory operations, and more. An AI model may request a tool, but the host decides whether the tool exists, whether the requesting agent is allowed to use it, and how execution is handled.
 
 ## Concepts
 
 ### Tool
 
-An executable function the AI can invoke during a conversation. Each tool declares a schema (name, description, parameters), a timeout (default 30 seconds), and an execute method that receives parsed arguments and returns a result.
+An executable function the MorsVitaEst host can invoke during a conversation, scheduled task, heartbeat, or agent workflow. Each tool declares a schema (name, description, parameters), a timeout (default 30 seconds), and an execute method that receives parsed arguments and returns a result.
 
 ### Tool Schema
 
@@ -20,7 +20,11 @@ Display metadata used in the settings UI. Contains an id, human-readable name an
 
 ### Tool Executor
 
-The component that looks up a tool by name, parses JSON arguments into a typed map, runs the tool with its declared timeout, catches errors, and truncates oversized results. Acts as the bridge between raw AI tool-call JSON and the typed tool implementations.
+The component that looks up a tool by name, parses JSON arguments into a typed map, runs the tool with its declared timeout, catches errors, and truncates oversized results. It is intentionally infrastructure-owned: raw AI tool-call JSON is only one possible input source. Termux agents, PowerShell agents, MCP agents, scheduled tasks, UI actions, and approved workflows can all route through the same executor.
+
+### Agent Tool Authority
+
+Agent tool authority is separate from model capability. A hosted agent can have no tools, read-only tools, approval-required tools, or autonomous tools with an allowlist. See [Kairos Infrastructure](kairos-infrastructure.md) for the host-level policy model.
 
 ## Available Tools
 
