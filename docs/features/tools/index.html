@@ -372,6 +372,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../kairos-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kairos Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../multi-service/" class="md-nav__link">
         
   
@@ -509,6 +537,17 @@
     <span class="md-ellipsis">
       
         Tool Executor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent-tool-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent Tool Authority
       
     </span>
   </a>
@@ -1263,6 +1302,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#agent-tool-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent Tool Authority
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1680,16 +1730,18 @@
 
 <h1 id="tools">Tools</h1>
 <p><strong>Last verified:</strong> 2026-05-22</p>
-<p>MorsVitaEst's tools feature allows the AI to execute external functions during conversations — web search, notifications, calendar events, shell commands, memory operations, and more. Tools are defined with a schema, executed with safety guards, and managed through per-tool toggles in settings.</p>
+<p>MorsVitaEst's tools feature lets the infrastructure execute external functions during conversations and background workflows — web search, notifications, calendar events, shell commands, memory operations, and more. An AI model may request a tool, but the host decides whether the tool exists, whether the requesting agent is allowed to use it, and how execution is handled.</p>
 <h2 id="concepts">Concepts</h2>
 <h3 id="tool">Tool</h3>
-<p>An executable function the AI can invoke during a conversation. Each tool declares a schema (name, description, parameters), a timeout (default 30 seconds), and an execute method that receives parsed arguments and returns a result.</p>
+<p>An executable function the MorsVitaEst host can invoke during a conversation, scheduled task, heartbeat, or agent workflow. Each tool declares a schema (name, description, parameters), a timeout (default 30 seconds), and an execute method that receives parsed arguments and returns a result.</p>
 <h3 id="tool-schema">Tool Schema</h3>
 <p>The machine-readable definition sent to the AI provider so it knows which tools are available and how to call them. Contains the tool name, a natural-language description, and a map of parameter definitions (type, description, required flag).</p>
 <h3 id="tool-info">Tool Info</h3>
 <p>Display metadata used in the settings UI. Contains an id, human-readable name and description (with optional localized string resources), and the current enabled state. Returned by the platform layer for all tools regardless of whether they are currently enabled.</p>
 <h3 id="tool-executor">Tool Executor</h3>
-<p>The component that looks up a tool by name, parses JSON arguments into a typed map, runs the tool with its declared timeout, catches errors, and truncates oversized results. Acts as the bridge between raw AI tool-call JSON and the typed tool implementations.</p>
+<p>The component that looks up a tool by name, parses JSON arguments into a typed map, runs the tool with its declared timeout, catches errors, and truncates oversized results. It is intentionally infrastructure-owned: raw AI tool-call JSON is only one possible input source. Termux agents, PowerShell agents, MCP agents, scheduled tasks, UI actions, and approved workflows can all route through the same executor.</p>
+<h3 id="agent-tool-authority">Agent Tool Authority</h3>
+<p>Agent tool authority is separate from model capability. A hosted agent can have no tools, read-only tools, approval-required tools, or autonomous tools with an allowlist. See <a href="../kairos-infrastructure/">Kairos Infrastructure</a> for the host-level policy model.</p>
 <h2 id="available-tools">Available Tools</h2>
 <h3 id="common-cross-platform">Common (cross-platform)</h3>
 <table>

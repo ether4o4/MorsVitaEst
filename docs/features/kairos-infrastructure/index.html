@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://github.com/ether4o4/MorsVitaEst/tree/main/docs/features/kairos-infrastructure/">
       
       
+        <link rel="prev" href="../chat/">
+      
+      
+        <link rel="next" href="../multi-service/">
       
       
         
@@ -283,8 +287,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -295,13 +301,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -322,7 +326,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -356,6 +360,208 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kairos Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kairos Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#agent-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent Host
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infrastructure-owned-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure-Owned Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tool-authority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tool Authority
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#five-color-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Five-Color Routing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-termux-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local Termux Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powershell-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PowerShell Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-model-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Model Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-code-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Code Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Direction
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -703,10 +909,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-idea" class="md-nav__link">
+  <a href="#agent-host" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core idea
+        Agent Host
       
     </span>
   </a>
@@ -714,10 +920,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#capability" class="md-nav__link">
+  <a href="#infrastructure-owned-tools" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Capability
+        Infrastructure-Owned Tools
       
     </span>
   </a>
@@ -725,10 +931,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#decisions" class="md-nav__link">
+  <a href="#tool-authority" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Decisions
+        Tool Authority
       
     </span>
   </a>
@@ -736,10 +942,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mobile-first-boundary" class="md-nav__link">
+  <a href="#five-color-routing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mobile-first boundary
+        Five-Color Routing
       
     </span>
   </a>
@@ -747,10 +953,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#swarm-direction" class="md-nav__link">
+  <a href="#runtime-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Swarm direction
+        Runtime Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-termux-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Local Termux Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powershell-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PowerShell Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-model-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Model Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mcp-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-code-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Code Boundary
       
     </span>
   </a>
@@ -758,10 +1025,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-files" class="md-nav__link">
+  <a href="#design-direction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key files
+        Design Direction
       
     </span>
   </a>
@@ -786,62 +1053,154 @@
 
 
 <h1 id="kairos-infrastructure">Kairos Infrastructure</h1>
-<p><strong>Last verified:</strong> 2026-05-26</p>
-<p>Kairos turns MorsVitaEst from an assistant app into a governed agent substrate. The app keeps the MorsVitaEst feature floor: persistent memory, soul, multi-provider fallback, on-device inference, tool execution, MCP, heartbeat, encrypted storage, TTS, Linux sandbox, dynamic UI, and mobile-first Android operation. Kairos adds a capability-growth loop around that floor.</p>
-<h2 id="core-idea">Core idea</h2>
-<p>Kairos does not blindly install agent frameworks. It discovers, reads, scores, quarantines, stages, and promotes capabilities. Code from Agent Zero, OpenClaw, Hermes-style agents, ZeroClaw, Runkai, Colour_Ceauxdid, or future GitHub trends is source material until it earns trust.</p>
-<h2 id="capability">Capability</h2>
-<p>A capability is any portable improvement unit:</p>
-<ul>
-<li>agent profile or swarm role</li>
-<li>tool definition</li>
-<li>skill/prompt/workflow</li>
-<li>provider adapter</li>
-<li>eval harness</li>
-<li>voice pipeline</li>
-<li>Termux/Ollama/local-model recipe</li>
-<li>governance pattern such as budget, kill switch, cache, circuit breaker, ledger, or promotion gate</li>
-</ul>
-<h2 id="decisions">Decisions</h2>
+<p><strong>Last verified:</strong> 2026-05-27</p>
+<p>Kairos is the infrastructure layer inside MorsVitaEst. It turns the app from "an assistant that can chat" into a host for agents, runtimes, tools, memory, and background work.</p>
+<p>The key rule is simple:</p>
+<blockquote>
+<p>The LLM may reason about tools, request tools, or explain tool results. The infrastructure owns whether tools exist, whether they are allowed, and how they execute.</p>
+</blockquote>
+<p>That keeps MorsVitaEst useful even when the active agent is a tiny local model, a remote API model, a Termux script, a PowerShell workflow, an MCP server, or a human-approved automation.</p>
+<h2 id="agent-host">Agent Host</h2>
+<p>An agent is anything MorsVitaEst can house and route work to.</p>
+<p>Supported runtime shapes:</p>
 <table>
 <thead>
 <tr>
-<th>Decision</th>
+<th>Runtime</th>
 <th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>PROMOTE_CANDIDATE</code></td>
-<td>Safe enough to propose for trusted implementation, still human-promoted</td>
+<td><code>API</code></td>
+<td>Hosted model or agent reached with a provider key or OpenAI-compatible endpoint</td>
 </tr>
 <tr>
-<td><code>STAGE</code></td>
-<td>Useful but incomplete; needs docs, license, tests, or wrapper design</td>
+<td><code>LOCAL_MODEL</code></td>
+<td>Local inference engine such as Ollama, LiteRT, or another device-local model runner</td>
 </tr>
 <tr>
-<td><code>QUARANTINE</code></td>
-<td>Potentially useful but privileged; do not execute directly</td>
+<td><code>TERMUX</code></td>
+<td>Android Termux runtime, usually for local shell, scripts, package workflows, and model servers</td>
 </tr>
 <tr>
-<td><code>REJECT</code></td>
-<td>Destructive, untrusted, or malformed</td>
+<td><code>POWERSHELL</code></td>
+<td>Windows PowerShell runtime for desktop-side workflows</td>
+</tr>
+<tr>
+<td><code>SANDBOX</code></td>
+<td>In-app Linux sandbox runtime on Android</td>
+</tr>
+<tr>
+<td><code>MCP</code></td>
+<td>External tool or agent server exposed through Model Context Protocol</td>
+</tr>
+<tr>
+<td><code>HUMAN</code></td>
+<td>Human-mediated lane for approval, review, or manual handoff</td>
 </tr>
 </tbody>
 </table>
-<h2 id="mobile-first-boundary">Mobile-first boundary</h2>
-<p>Termux/Ollama support is core scope. Any imported capability must either work on Android directly, work inside MorsVitaEst's Linux sandbox, or be expressible as a mobile-safe wrapper. Desktop-only capabilities may be retained as reference patterns but cannot redefine the app architecture.</p>
-<h2 id="swarm-direction">Swarm direction</h2>
-<p>Colour_Ceauxdid's color agents become one Kairos mind split for safety and implementation:</p>
+<p>Each hosted agent profile has:</p>
 <ul>
-<li>Red/Spark: execution and tools</li>
-<li>Blue/Mythos: architecture and continuity</li>
-<li>Green: implementation/runtime</li>
-<li>Yellow: exploration and discovery</li>
-<li>Purple: synthesis and user-facing voice</li>
+<li>stable id and display name</li>
+<li>runtime endpoint or command metadata</li>
+<li>optional five-color role</li>
+<li>tool authority level</li>
+<li>optional per-agent tool allowlist</li>
+<li>notes for user-facing or internal routing context</li>
 </ul>
-<p>The split is a routing and review discipline, not five unrelated chatbots.</p>
-<h2 id="key-files">Key files</h2>
+<p>The goal is not to force every agent into the same model interface. The goal is to make each runtime visible to one host that can decide what it is allowed to do.</p>
+<h2 id="infrastructure-owned-tools">Infrastructure-Owned Tools</h2>
+<p>Tools are not owned by the model. They are native capabilities of the MorsVitaEst infrastructure.</p>
+<p>The model can produce a request like:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;requestingAgentId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;termux-agent&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;toolName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;execute_shell_command&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;argumentsJson&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;command\&quot;:\&quot;pwd\&quot;}&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Inspect current working directory before running setup.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The infrastructure then decides:</p>
+<ul>
+<li>Is this agent known?</li>
+<li>Is this tool available on the current platform?</li>
+<li>Is the tool enabled?</li>
+<li>Is the requested tool inside the agent's allowlist?</li>
+<li>Does the request need user approval?</li>
+<li>Should the result be truncated, stored, shown, or routed back into a model turn?</li>
+</ul>
+<p>That means small local models do not need perfect tool-call behavior to be useful. They can operate through structured infrastructure affordances, UI actions, explicit workflows, scheduled tasks, or another agent lane that asks for a tool on their behalf.</p>
+<h2 id="tool-authority">Tool Authority</h2>
+<p>Tool authority is separate from agent intelligence.</p>
+<table>
+<thead>
+<tr>
+<th>Authority</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>NONE</code></td>
+<td>Agent can chat or reason but cannot execute tools</td>
+</tr>
+<tr>
+<td><code>READ_ONLY</code></td>
+<td>Agent can use low-risk read tools without approval</td>
+</tr>
+<tr>
+<td><code>APPROVAL_REQUIRED</code></td>
+<td>Agent can prepare tool calls, but the infrastructure pauses for user approval</td>
+</tr>
+<tr>
+<td><code>AUTONOMOUS</code></td>
+<td>Agent can execute allowed tools without an approval stop</td>
+</tr>
+</tbody>
+</table>
+<p>An agent may be powerful but have no authority. Another agent may be simple but allowed to run a narrow tool safely. Authority belongs to the host, not the LLM.</p>
+<h2 id="five-color-routing">Five-Color Routing</h2>
+<p>The color system routes responsibility inside the host:</p>
+<ul>
+<li><strong>Red</strong>: tool execution, shell, device moves, implementation</li>
+<li><strong>Blue</strong>: architecture, continuity, risk review</li>
+<li><strong>Green</strong>: build path, local runtime, integration</li>
+<li><strong>Yellow</strong>: exploration, candidate capabilities, user-facing clarity</li>
+<li><strong>Purple</strong>: synthesis, identity, final coherence</li>
+</ul>
+<p>The colors are not five unrelated chatbots. They are lanes inside one agent infrastructure.</p>
+<h2 id="runtime-examples">Runtime Examples</h2>
+<h3 id="local-termux-agent">Local Termux Agent</h3>
+<ul>
+<li>Runtime: <code>TERMUX</code></li>
+<li>Endpoint: local command or local Ollama server</li>
+<li>Tool authority: <code>APPROVAL_REQUIRED</code> or narrow <code>AUTONOMOUS</code></li>
+<li>Typical tools: shell, fetch, file inspection, local model health checks</li>
+</ul>
+<h3 id="powershell-operator">PowerShell Operator</h3>
+<ul>
+<li>Runtime: <code>POWERSHELL</code></li>
+<li>Endpoint: <code>powershell.exe</code></li>
+<li>Tool authority: usually <code>APPROVAL_REQUIRED</code></li>
+<li>Typical tools: repo inspection, build scripts, Windows file operations, deployment helpers</li>
+</ul>
+<h3 id="api-model-agent">API Model Agent</h3>
+<ul>
+<li>Runtime: <code>API</code></li>
+<li>Endpoint: provider or OpenAI-compatible URL</li>
+<li>Tool authority: depends on trust, cost, and task type</li>
+<li>Typical tools: web fetch, MCP, memory, planning, code review</li>
+</ul>
+<h3 id="mcp-agent">MCP Agent</h3>
+<ul>
+<li>Runtime: <code>MCP</code></li>
+<li>Endpoint: Streamable HTTP MCP server</li>
+<li>Tool authority: scoped to server permissions and local policy</li>
+<li>Typical tools: docs lookup, search, repo tools, domain-specific actions</li>
+</ul>
+<h2 id="current-code-boundary">Current Code Boundary</h2>
+<p>Current primitives:</p>
 <table>
 <thead>
 <tr>
@@ -851,23 +1210,48 @@
 </thead>
 <tbody>
 <tr>
-<td><code>composeApp/src/commonMain/.../kairos/CapabilityVetter.kt</code></td>
-<td>Pure vetting logic for discovered capabilities</td>
+<td><code>composeApp/src/commonMain/.../data/ToolExecutor.kt</code></td>
+<td>Executes named tools by JSON arguments, independent from provider-specific model code</td>
 </tr>
 <tr>
-<td><code>composeApp/src/commonMain/.../kairos/CapabilityHeartbeat.kt</code></td>
-<td>Standing heartbeat prompt for capability discovery</td>
+<td><code>composeApp/src/commonMain/.../kairos/AgentHost.kt</code></td>
+<td>Defines hosted agent profiles, runtime kinds, tool authority, and infrastructure tool requests</td>
 </tr>
 <tr>
 <td><code>composeApp/src/commonMain/.../kairos/KairosSwarm.kt</code></td>
-<td>Five-color routing primitive for splitting one Kairos mind by risk and task shape</td>
+<td>Routes requests through the five-color responsibility lanes</td>
 </tr>
 <tr>
-<td><code>composeApp/src/commonTest/.../kairos/CapabilityVetterTest.kt</code></td>
-<td>Regression tests for promotion/quarantine/reject decisions</td>
+<td><code>composeApp/src/commonMain/.../kairos/CapabilityVetter.kt</code></td>
+<td>Scores and stages candidate capabilities before they become trusted infrastructure</td>
+</tr>
+<tr>
+<td><code>composeApp/src/commonTest/.../kairos/AgentHostPolicyTest.kt</code></td>
+<td>Locks in infrastructure-owned tool authority behavior</td>
 </tr>
 </tbody>
 </table>
+<h2 id="design-direction">Design Direction</h2>
+<p>MorsVitaEst should evolve toward this split:</p>
+<div class="highlight"><pre><span></span><code>User
+  -&gt; MorsVitaEst Host
+      -&gt; Agent Router
+          -&gt; API Agent
+          -&gt; Local Model Agent
+          -&gt; Termux Agent
+          -&gt; PowerShell Agent
+          -&gt; MCP Agent
+      -&gt; Tool Authority Layer
+          -&gt; Native Tools
+          -&gt; Shell/Sandbox
+          -&gt; MCP Tools
+          -&gt; Memory/Tasks/Heartbeat
+      -&gt; Result Router
+          -&gt; UI
+          -&gt; Conversation
+          -&gt; Background Work
+</code></pre></div>
+<p>The host is the durable thing. Agents can be swapped, added, disabled, or routed differently. Tools remain governed by MorsVitaEst.</p>
 
 
 
