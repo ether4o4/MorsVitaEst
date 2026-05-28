@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Šioje platformoje nėra pasiekiamų įrankių.</string>
     <string name="settings_tab_general">Bendra</string>
     <string name="settings_tab_agent">Agentas</string>
-    <string name="settings_tab_services">Paslaugos</string>
     <string name="settings_tab_tools">Įrankiai</string>
     <string name="settings_tab_integrations">Integracijos</string>
     <string name="tools_count">%1$d Įrankiai</string>

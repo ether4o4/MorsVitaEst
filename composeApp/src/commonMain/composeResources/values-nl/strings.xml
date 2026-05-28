@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Nieuwe chat</string>
     <string name="settings_tools_description">Schakel AI-hulpmiddelen in of uit die namens u acties kunnen uitvoeren.</string>
     <string name="settings_tools_none_available">Geen hulpmiddelen beschikbaar op dit platform.</string>
-    <string name="settings_tab_services">Diensten</string>
     <string name="settings_tab_tools">Hulpmiddelen</string>
     <string name="settings_tab_integrations">Integraties</string>
     <string name="tools_count">%1$d Hulpmiddelen</string>

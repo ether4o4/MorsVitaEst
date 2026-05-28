@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Nagins utensil disponibel sin questa plattafurma.</string>
     <string name="settings_tab_general">General</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Servetschs</string>
     <string name="settings_tab_tools">Utensils</string>
     <string name="settings_tab_integrations">Integraziuns</string>
     <string name="tools_count">%1$d utensils</string>

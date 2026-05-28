@@ -49,7 +49,6 @@ enum class ConnectionStatus {
 enum class SettingsTab {
     General,
     Agent,
-    Services,
     Tools,
     Sandbox,
     Integrations,
@@ -57,7 +56,7 @@ enum class SettingsTab {
 
 @Immutable
 data class SettingsUiState(
-    val currentTab: SettingsTab = SettingsTab.Services,
+    val currentTab: SettingsTab = SettingsTab.Agent,
     val configuredServices: ImmutableList<ConfiguredServiceEntry> = persistentListOf(),
     val expandedServiceId: String? = null,
     val availableServicesToAdd: ImmutableList<Service> = persistentListOf(),

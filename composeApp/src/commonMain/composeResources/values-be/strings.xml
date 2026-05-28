@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">На гэтай платформе няма даступных інструментаў.</string>
     <string name="settings_tab_general">Агульныя</string>
     <string name="settings_tab_agent">Агент</string>
-    <string name="settings_tab_services">Сэрвісы</string>
     <string name="settings_tab_tools">Інструменты</string>
     <string name="settings_tab_integrations">Інтэграцыі</string>
     <string name="tools_count">%1$d Інструментаў</string>

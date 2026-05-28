@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Нема доступних алатки на овој платформи.</string>
     <string name="settings_tab_general">Опште</string>
     <string name="settings_tab_agent">Агент</string>
-    <string name="settings_tab_services">Сервиси</string>
     <string name="settings_tab_tools">Алатке</string>
     <string name="settings_tab_integrations">Интеграције</string>
     <string name="tools_count">%1$d алатки</string>

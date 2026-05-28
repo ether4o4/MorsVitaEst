@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">ਨਵੀਂ ਚੈਟ</string>
     <string name="settings_tools_description">AI ਟੂਲ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ ਜੋ ਤੁਹਾਡੀ ਤਰਫੋਂ ਕਾਰਵਾਈਆਂ ਕਰ ਸਕਦੇ ਹਨ।</string>
     <string name="settings_tools_none_available">ਇਸ ਪਲੇਟਫਾਰਮ 'ਤੇ ਕੋਈ ਟੂਲ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</string>
-    <string name="settings_tab_services">ਸੇਵਾਵਾਂ</string>
     <string name="settings_tab_tools">ਟੂਲ</string>
     <string name="settings_tab_integrations">ਏਕੀਕਰਨ</string>
     <string name="tools_count">%1$d ਟੂਲ</string>

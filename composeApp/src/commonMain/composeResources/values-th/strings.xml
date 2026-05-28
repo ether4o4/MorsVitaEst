@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">แชทใหม่</string>
     <string name="settings_tools_description">เปิดหรือปิดเครื่องมือ AI ที่สามารถดำเนินการแทนคุณได้</string>
     <string name="settings_tools_none_available">ไม่มีเครื่องมือที่พร้อมใช้งานบนแพลตฟอร์มนี้</string>
-    <string name="settings_tab_services">บริการ</string>
     <string name="settings_tab_tools">เครื่องมือ</string>
     <string name="settings_tab_integrations">การเชื่อมต่อ</string>
     <string name="tools_count">%1$d เครื่องมือ</string>

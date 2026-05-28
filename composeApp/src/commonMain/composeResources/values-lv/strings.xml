@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Šajā platformā nav pieejamu rīku.</string>
     <string name="settings_tab_general">Vispārīgi</string>
     <string name="settings_tab_agent">Aģents</string>
-    <string name="settings_tab_services">Pakalpojumi</string>
     <string name="settings_tab_tools">Rīki</string>
     <string name="settings_tab_integrations">Integrācijas</string>
     <string name="tools_count">%1$d Rīki</string>

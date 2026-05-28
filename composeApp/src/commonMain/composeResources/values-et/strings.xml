@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Sellel platvormil pole tööriistu saadaval.</string>
     <string name="settings_tab_general">Üldine</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Teenused</string>
     <string name="settings_tab_tools">Tööriistad</string>
     <string name="settings_tab_integrations">Integratsioonid</string>
     <string name="tools_count">%1$d Tööriistad</string>

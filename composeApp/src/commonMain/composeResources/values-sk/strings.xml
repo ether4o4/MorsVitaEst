@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Na tejto platforme nie sú k dispozícii žiadne nástroje.</string>
     <string name="settings_tab_general">Všeobecné</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Služby</string>
     <string name="settings_tab_tools">Nástroje</string>
     <string name="settings_tab_integrations">Integrácie</string>
     <string name="tools_count">%1$d nástrojov</string>

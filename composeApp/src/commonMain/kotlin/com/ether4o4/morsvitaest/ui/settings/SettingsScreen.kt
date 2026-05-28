@@ -252,7 +252,6 @@ import morsvitaest.composeapp.generated.resources.settings_tab_agent
 import morsvitaest.composeapp.generated.resources.settings_tab_general
 import morsvitaest.composeapp.generated.resources.settings_tab_integrations
 import morsvitaest.composeapp.generated.resources.settings_tab_sandbox
-import morsvitaest.composeapp.generated.resources.settings_tab_services
 import morsvitaest.composeapp.generated.resources.settings_tab_tools
 import morsvitaest.composeapp.generated.resources.settings_task_details_consecutive_failures
 import morsvitaest.composeapp.generated.resources.settings_task_details_created
@@ -439,10 +438,7 @@ fun SettingsScreenContent(
                 ) {
                     Spacer(Modifier.height(16.dp))
 
-                    val maxContentWidth = when (filteredUiState.currentTab) {
-                        SettingsTab.Services -> 500.dp
-                        else -> 900.dp
-                    }
+                    val maxContentWidth = 900.dp
                     Column(
                         Modifier.widthIn(max = maxContentWidth).fillMaxWidth().padding(horizontal = 16.dp),
                         horizontalAlignment = CenterHorizontally,
@@ -454,10 +450,6 @@ fun SettingsScreenContent(
 
                             SettingsTab.Agent -> {
                                 AgentContent(uiState = filteredUiState, actions = actions)
-                            }
-
-                            SettingsTab.Services -> {
-                                ServicesContent(uiState = filteredUiState, actions = actions)
                             }
 
                             SettingsTab.Integrations -> {
@@ -563,7 +555,6 @@ private fun SettingsTabSelector(
                         text = when (tab) {
                             SettingsTab.General -> stringResource(Res.string.settings_tab_general)
                             SettingsTab.Agent -> stringResource(Res.string.settings_tab_agent)
-                            SettingsTab.Services -> stringResource(Res.string.settings_tab_services)
                             SettingsTab.Tools -> stringResource(Res.string.settings_tab_tools)
                             SettingsTab.Sandbox -> stringResource(Res.string.settings_tab_sandbox)
                             SettingsTab.Integrations -> stringResource(Res.string.settings_tab_integrations)

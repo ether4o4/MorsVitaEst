@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">새 채팅</string>
     <string name="settings_tools_description">대신 작업을 수행할 수 있는 AI 도구를 활성화 또는 비활성화합니다.</string>
     <string name="settings_tools_none_available">이 플랫폼에서 사용 가능한 도구가 없습니다.</string>
-    <string name="settings_tab_services">서비스</string>
     <string name="settings_tab_tools">도구</string>
     <string name="settings_tab_integrations">통합</string>
     <string name="tools_count">%1$d 도구</string>

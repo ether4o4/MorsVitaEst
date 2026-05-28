@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Nuova chat</string>
     <string name="settings_tools_description">Abilita o disabilita gli strumenti IA che possono eseguire azioni per tuo conto.</string>
     <string name="settings_tools_none_available">Nessuno strumento disponibile su questa piattaforma.</string>
-    <string name="settings_tab_services">Servizi</string>
     <string name="settings_tab_tools">Strumenti</string>
     <string name="settings_tab_integrations">Integrazioni</string>
     <string name="tools_count">%1$d Strumenti</string>

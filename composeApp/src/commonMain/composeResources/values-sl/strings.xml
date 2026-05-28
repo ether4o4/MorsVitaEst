@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Na tej platformi ni na voljo nobenih orodij.</string>
     <string name="settings_tab_general">Splošno</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Storitve</string>
     <string name="settings_tab_tools">Orodja</string>
     <string name="settings_tab_integrations">Integracije</string>
     <string name="tools_count">%1$d orodij</string>

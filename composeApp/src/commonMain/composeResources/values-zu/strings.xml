@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Awekho amathuluzi atholakalayo kule pletfomu.</string>
     <string name="settings_tab_general">Okuvamile</string>
     <string name="settings_tab_agent">I-ejenti</string>
-    <string name="settings_tab_services">Amasevisi</string>
     <string name="settings_tab_tools">Amathuluzi</string>
     <string name="settings_tab_integrations">Ukuhlanganiswa</string>
     <string name="tools_count">Amathuluzi angu-%1$d</string>

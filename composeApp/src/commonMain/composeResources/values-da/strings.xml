@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Ingen værktøjer tilgængelige på denne platform.</string>
     <string name="settings_tab_general">Generelt</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Tjenester</string>
     <string name="settings_tab_tools">Værktøjer</string>
     <string name="settings_tab_integrations">Integrationer</string>
     <string name="tools_count">%1$d Værktøjer</string>

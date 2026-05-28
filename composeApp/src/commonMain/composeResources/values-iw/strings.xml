@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">אין כלים זמינים בפלטפורמה זו.</string>
     <string name="settings_tab_general">כללי</string>
     <string name="settings_tab_agent">סוכן</string>
-    <string name="settings_tab_services">שירותים</string>
     <string name="settings_tab_tools">כלים</string>
     <string name="settings_tab_integrations">אינטגרציות</string>
     <string name="tools_count">%1$d כלים</string>

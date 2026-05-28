@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">T\u00e4ll\u00e4 alustalla ei ole ty\u00f6kaluja saatavilla.</string>
     <string name="settings_tab_general">Yleiset</string>
     <string name="settings_tab_agent">Agentti</string>
-    <string name="settings_tab_services">Palvelut</string>
     <string name="settings_tab_tools">Ty\u00f6kalut</string>
     <string name="settings_tab_integrations">Integraatiot</string>
     <string name="tools_count">%1$d Työkalua</string>

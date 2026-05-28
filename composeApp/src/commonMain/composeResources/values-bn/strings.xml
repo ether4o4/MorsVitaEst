@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">নতুন চ্যাট</string>
     <string name="settings_tools_description">আপনার পক্ষ থেকে কাজ করতে পারে এমন AI টুলস সক্রিয় বা নিষ্ক্রিয় করুন।</string>
     <string name="settings_tools_none_available">এই প্ল্যাটফর্মে কোনো টুল উপলব্ধ নেই।</string>
-    <string name="settings_tab_services">সেবাসমূহ</string>
     <string name="settings_tab_tools">টুলস</string>
     <string name="settings_tab_integrations">ইন্টিগ্রেশন</string>
     <string name="tools_count">%1$d টুল</string>

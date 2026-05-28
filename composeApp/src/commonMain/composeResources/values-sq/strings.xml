@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Nuk ka mjete të disponueshme në këtë platformë.</string>
     <string name="settings_tab_general">Të përgjithshme</string>
     <string name="settings_tab_agent">Agjent</string>
-    <string name="settings_tab_services">Shërbimet</string>
     <string name="settings_tab_tools">Mjetet</string>
     <string name="settings_tab_integrations">Integrimet</string>
     <string name="tools_count">%1$d mjete</string>

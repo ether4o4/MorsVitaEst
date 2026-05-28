@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">新しいチャット</string>
     <string name="settings_tools_description">あなたに代わってアクションを実行できるAIツールを有効または無効にします。</string>
     <string name="settings_tools_none_available">このプラットフォームでは利用可能なツールがありません。</string>
-    <string name="settings_tab_services">サービス</string>
     <string name="settings_tab_tools">ツール</string>
     <string name="settings_tab_integrations">連携</string>
     <string name="tools_count">%1$d ツール</string>

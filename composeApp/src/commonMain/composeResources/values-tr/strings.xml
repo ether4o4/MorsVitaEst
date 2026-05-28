@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Yeni sohbet</string>
     <string name="settings_tools_description">Sizin adınıza eylemler gerçekleştirebilen yapay zeka araçlarını etkinleştirin veya devre dışı bırakın.</string>
     <string name="settings_tools_none_available">Bu platformda kullanılabilir araç yok.</string>
-    <string name="settings_tab_services">Hizmetler</string>
     <string name="settings_tab_tools">Araçlar</string>
     <string name="settings_tab_integrations">Entegrasyonlar</string>
     <string name="tools_count">%1$d Araç</string>

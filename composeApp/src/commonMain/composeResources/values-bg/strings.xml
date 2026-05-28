@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Няма налични инструменти на тази платформа.</string>
     <string name="settings_tab_general">Общи</string>
     <string name="settings_tab_agent">Агент</string>
-    <string name="settings_tab_services">Услуги</string>
     <string name="settings_tab_tools">Инструменти</string>
     <string name="settings_tab_integrations">Интеграции</string>
     <string name="tools_count">%1$d Инструмента</string>

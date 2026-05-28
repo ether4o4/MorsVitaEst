@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Nuevo chat</string>
     <string name="settings_tools_description">Habilita o deshabilita herramientas de IA que pueden realizar acciones en tu nombre.</string>
     <string name="settings_tools_none_available">No hay herramientas disponibles en esta plataforma.</string>
-    <string name="settings_tab_services">Servicios</string>
     <string name="settings_tab_tools">Herramientas</string>
     <string name="settings_tab_integrations">Integraciones</string>
     <string name="tools_count">%1$d Herramientas</string>

@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">नई चैट</string>
     <string name="settings_tools_description">AI उपकरणों को सक्षम या अक्षम करें जो आपकी ओर से कार्य कर सकते हैं।</string>
     <string name="settings_tools_none_available">इस प्लेटफॉर्म पर कोई उपकरण उपलब्ध नहीं है।</string>
-    <string name="settings_tab_services">सेवाएं</string>
     <string name="settings_tab_tools">उपकरण</string>
     <string name="settings_tab_integrations">एकीकरण</string>
     <string name="tools_count">%1$d टूल</string>

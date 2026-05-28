@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Na t\u00e9to platform\u011b nejsou k dispozici \u017e\u00e1dn\u00e9 n\u00e1stroje.</string>
     <string name="settings_tab_general">Obecn\u00e9</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Slu\u017eby</string>
     <string name="settings_tab_tools">N\u00e1stroje</string>
     <string name="settings_tab_integrations">Integrace</string>
     <string name="tools_count">%1$d Nástrojů</string>

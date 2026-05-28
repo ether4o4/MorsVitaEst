@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">محادثة جديدة</string>
     <string name="settings_tools_description">تمكين أو تعطيل أدوات الذكاء الاصطناعي التي يمكنها تنفيذ إجراءات نيابة عنك.</string>
     <string name="settings_tools_none_available">لا توجد أدوات متاحة على هذه المنصة.</string>
-    <string name="settings_tab_services">الخدمات</string>
     <string name="settings_tab_tools">الأدوات</string>
     <string name="settings_tab_integrations">التكاملات</string>
     <string name="tools_count">%1$d أدوات</string>

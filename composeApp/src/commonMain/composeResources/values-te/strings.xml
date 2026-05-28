@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">కొత్త చాట్</string>
     <string name="settings_tools_description">మీ తరపున చర్యలు చేయగల AI టూల్స్‌ను ఎనేబుల్ లేదా డిసేబుల్ చేయండి.</string>
     <string name="settings_tools_none_available">ఈ ప్లాట్‌ఫారమ్‌లో టూల్స్ అందుబాటులో లేవు.</string>
-    <string name="settings_tab_services">సేవలు</string>
     <string name="settings_tab_tools">టూల్స్</string>
     <string name="settings_tab_integrations">ఇంటిగ్రేషన్లు</string>
     <string name="tools_count">%1$d సాధనాలు</string>

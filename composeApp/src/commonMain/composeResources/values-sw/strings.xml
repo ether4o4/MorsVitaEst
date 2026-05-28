@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Mazungumzo mapya</string>
     <string name="settings_tools_description">Washa au zima zana za AI ambazo zinaweza kutekeleza vitendo kwa niaba yako.</string>
     <string name="settings_tools_none_available">Hakuna zana zinazopatikana kwenye jukwaa hili.</string>
-    <string name="settings_tab_services">Huduma</string>
     <string name="settings_tab_tools">Zana</string>
     <string name="settings_tab_integrations">Muunganisho</string>
     <string name="tools_count">%1$d Zana</string>

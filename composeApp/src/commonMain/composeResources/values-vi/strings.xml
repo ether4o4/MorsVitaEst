@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Cuộc trò chuyện mới</string>
     <string name="settings_tools_description">Bật hoặc tắt các công cụ AI có thể thực hiện hành động thay mặt bạn.</string>
     <string name="settings_tools_none_available">Không có công cụ nào khả dụng trên nền tảng này.</string>
-    <string name="settings_tab_services">Dịch vụ</string>
     <string name="settings_tab_tools">Công cụ</string>
     <string name="settings_tab_integrations">Tích hợp</string>
     <string name="tools_count">%1$d Công cụ</string>

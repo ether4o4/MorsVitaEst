@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Nouvelle conversation</string>
     <string name="settings_tools_description">Activez ou désactivez les outils IA qui peuvent effectuer des actions en votre nom.</string>
     <string name="settings_tools_none_available">Aucun outil disponible sur cette plateforme.</string>
-    <string name="settings_tab_services">Services</string>
     <string name="settings_tab_tools">Outils</string>
     <string name="settings_tab_integrations">Intégrations</string>
     <string name="tools_count">%1$d Outils</string>

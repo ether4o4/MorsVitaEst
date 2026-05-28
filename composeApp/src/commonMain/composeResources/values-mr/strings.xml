@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">नवीन चॅट</string>
     <string name="settings_tools_description">तुमच्या वतीने कृती करू शकणारी AI साधने सक्षम किंवा अक्षम करा.</string>
     <string name="settings_tools_none_available">या प्लॅटफॉर्मवर कोणतीही साधने उपलब्ध नाहीत.</string>
-    <string name="settings_tab_services">सेवा</string>
     <string name="settings_tab_tools">साधने</string>
     <string name="settings_tab_integrations">एकत्रीकरणे</string>
     <string name="tools_count">%1$d साधने</string>

@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Neuer Chat</string>
     <string name="settings_tools_description">Aktiviere oder deaktiviere KI-Werkzeuge, die Aktionen in deinem Namen ausführen können.</string>
     <string name="settings_tools_none_available">Keine Werkzeuge auf dieser Plattform verfügbar.</string>
-    <string name="settings_tab_services">Dienste</string>
     <string name="settings_tab_tools">Werkzeuge</string>
     <string name="settings_tab_integrations">Integrationen</string>
     <string name="tools_count">%1$d Werkzeuge</string>

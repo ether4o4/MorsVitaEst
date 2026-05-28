@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Бұл платформада құралдар қолжетімсіз.</string>
     <string name="settings_tab_general">Жалпы</string>
     <string name="settings_tab_agent">Агент</string>
-    <string name="settings_tab_services">Қызметтер</string>
     <string name="settings_tab_tools">Құралдар</string>
     <string name="settings_tab_integrations">Интеграциялар</string>
     <string name="tools_count">%1$d Құрал</string>

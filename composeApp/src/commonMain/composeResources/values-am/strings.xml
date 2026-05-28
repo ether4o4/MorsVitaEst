@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">በዚህ መድረክ ላይ ምንም መሳሪያዎች የሉም።</string>
     <string name="settings_tab_general">ጠቅላላ</string>
     <string name="settings_tab_agent">ወኪል</string>
-    <string name="settings_tab_services">አገልግሎቶች</string>
     <string name="settings_tab_tools">መሳሪያዎች</string>
     <string name="settings_tab_integrations">ውህደቶች</string>
     <string name="tools_count">%1$d መሳሪያዎች</string>

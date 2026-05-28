@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Новый чат</string>
     <string name="settings_tools_description">Включите или отключите инструменты ИИ, которые могут выполнять действия от вашего имени.</string>
     <string name="settings_tools_none_available">На этой платформе нет доступных инструментов.</string>
-    <string name="settings_tab_services">Сервисы</string>
     <string name="settings_tab_tools">Инструменты</string>
     <string name="settings_tab_integrations">Интеграции</string>
     <string name="tools_count">%1$d инструментов</string>

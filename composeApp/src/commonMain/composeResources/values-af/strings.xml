@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Geen gereedskap beskikbaar op hierdie platform nie.</string>
     <string name="settings_tab_general">Algemeen</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Dienste</string>
     <string name="settings_tab_tools">Gereedskap</string>
     <string name="settings_tab_integrations">Integrasies</string>
     <string name="tools_count">%1$d Gereedskap</string>

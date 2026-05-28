@@ -52,7 +52,6 @@
     <string name="settings_tools_none_available">No tools available on this platform.</string>
     <string name="settings_tab_general">General</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Services</string>
     <string name="settings_tab_tools">Tools</string>
     <string name="settings_tab_sandbox">Linux Sandbox</string>
     <string name="settings_tab_integrations">Integrations</string>

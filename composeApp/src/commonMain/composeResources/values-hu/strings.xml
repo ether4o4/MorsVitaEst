@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Ezen a platformon nem érhetők el eszközök.</string>
     <string name="settings_tab_general">Általános</string>
     <string name="settings_tab_agent">Ügynök</string>
-    <string name="settings_tab_services">Szolgáltatások</string>
     <string name="settings_tab_tools">Eszközök</string>
     <string name="settings_tab_integrations">Integrációk</string>
     <string name="tools_count">%1$d Eszköz</string>

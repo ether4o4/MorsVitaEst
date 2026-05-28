@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">新聊天</string>
     <string name="settings_tools_description">启用或禁用可以代表您执行操作的 AI 工具。</string>
     <string name="settings_tools_none_available">此平台上没有可用的工具。</string>
-    <string name="settings_tab_services">服务</string>
     <string name="settings_tab_tools">工具</string>
     <string name="settings_tab_integrations">集成</string>
     <string name="tools_count">%1$d 个工具</string>

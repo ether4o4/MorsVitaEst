@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">نئی چیٹ</string>
     <string name="settings_tools_description">AI ٹولز کو فعال یا غیر فعال کریں جو آپ کی طرف سے کام کر سکتے ہیں۔</string>
     <string name="settings_tools_none_available">اس پلیٹ فارم پر کوئی ٹولز دستیاب نہیں ہیں۔</string>
-    <string name="settings_tab_services">خدمات</string>
     <string name="settings_tab_tools">ٹولز</string>
     <string name="settings_tab_integrations">انٹیگریشنز</string>
     <string name="tools_count">%1$d ٹولز</string>

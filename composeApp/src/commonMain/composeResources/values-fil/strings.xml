@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Walang available na mga tool sa platform na ito.</string>
     <string name="settings_tab_general">Pangkalahatan</string>
     <string name="settings_tab_agent">Ahente</string>
-    <string name="settings_tab_services">Mga Serbisyo</string>
     <string name="settings_tab_tools">Mga Tool</string>
     <string name="settings_tab_integrations">Mga Integrasyon</string>
     <string name="tools_count">%1$d Mga Tool</string>

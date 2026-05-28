@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Новий чат</string>
     <string name="settings_tools_description">Увімкніть або вимкніть інструменти ШІ, які можуть виконувати дії від вашого імені.</string>
     <string name="settings_tools_none_available">На цій платформі немає доступних інструментів.</string>
-    <string name="settings_tab_services">Сервіси</string>
     <string name="settings_tab_tools">Інструменти</string>
     <string name="settings_tab_integrations">Інтеграції</string>
     <string name="tools_count">%1$d інструментів</string>

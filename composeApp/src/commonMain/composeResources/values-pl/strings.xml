@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Nowy czat</string>
     <string name="settings_tools_description">Włącz lub wyłącz narzędzia AI, które mogą wykonywać działania w Twoim imieniu.</string>
     <string name="settings_tools_none_available">Brak dostępnych narzędzi na tej platformie.</string>
-    <string name="settings_tab_services">Usługi</string>
     <string name="settings_tab_tools">Narzędzia</string>
     <string name="settings_tab_integrations">Integracje</string>
     <string name="tools_count">%1$d Narzędzia</string>

@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">નવી ચેટ</string>
     <string name="settings_tools_description">તમારા વતી ક્રિયાઓ કરી શકે તેવા AI ટૂલ્સને સક્ષમ અથવા અક્ષમ કરો.</string>
     <string name="settings_tools_none_available">આ પ્લેટફોર્મ પર કોઈ ટૂલ્સ ઉપલબ્ધ નથી.</string>
-    <string name="settings_tab_services">સેવાઓ</string>
     <string name="settings_tab_tools">ટૂલ્સ</string>
     <string name="settings_tab_integrations">એકીકરણો</string>
     <string name="tools_count">%1$d ટૂલ્સ</string>

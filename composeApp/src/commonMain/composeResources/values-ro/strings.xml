@@ -39,7 +39,6 @@
     <string name="settings_tools_none_available">Niciun instrument disponibil pe această platformă.</string>
     <string name="settings_tab_general">General</string>
     <string name="settings_tab_agent">Agent</string>
-    <string name="settings_tab_services">Servicii</string>
     <string name="settings_tab_tools">Instrumente</string>
     <string name="settings_tab_integrations">Integrări</string>
     <string name="tools_count">%1$d instrumente</string>

@@ -45,7 +45,6 @@
     <string name="new_chat_content_description">Sembang baharu</string>
     <string name="settings_tools_description">Aktifkan atau nyahaktifkan alat AI yang boleh melakukan tindakan bagi pihak anda.</string>
     <string name="settings_tools_none_available">Tiada alat tersedia pada platform ini.</string>
-    <string name="settings_tab_services">Perkhidmatan</string>
     <string name="settings_tab_tools">Alat</string>
     <string name="settings_tab_integrations">Integrasi</string>
     <string name="tools_count">%1$d Alat</string>
