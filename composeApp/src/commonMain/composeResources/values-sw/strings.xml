@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Hotuba</string>
     <string name="bot_message_copy_content_description">Nakili</string>
     <string name="bot_message_flag_content_description">Weka alama maudhui</string>
-    <string name="settings_free_tier_title">Kiwango cha Bure</string>
-    <string name="settings_free_tier_description">Kadri msingi wa watumiaji unavyokua, udhamini husaidia kupanua miundombinu, kuongeza vikomo vya maombi kwa kila mtu, na kuweka maendeleo yakiendelea.</string>
-    <string name="settings_become_sponsor">Kuwa Mdhamini wa GitHub</string>
-    <string name="settings_business_partnerships">Ushirikiano wa Biashara</string>
-    <string name="settings_business_partnerships_description">Ungependa kuonyesha nembo ya kampuni yako au kujadili ushirikiano wa kimkakati?</string>
-    <string name="settings_contact_sponsorship">Wasiliana kwa Udhamini wa Kimkakati</string>
     <string name="settings_status_error_invalid_key">Ufunguo wa API si sahihi</string>
     <string name="settings_status_error_quota_exhausted">Kiwango kimeisha</string>
     <string name="settings_status_error_rate_limited">Kikomo cha kiwango kimefikiwa</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">Mazungumzo mapya</string>
     <string name="settings_tools_description">Washa au zima zana za AI ambazo zinaweza kutekeleza vitendo kwa niaba yako.</string>
     <string name="settings_tools_none_available">Hakuna zana zinazopatikana kwenye jukwaa hili.</string>
+    <string name="settings_tab_services">Huduma</string>
     <string name="settings_tab_tools">Zana</string>
     <string name="settings_tab_integrations">Muunganisho</string>
     <string name="tools_count">%1$d Zana</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Ondoka hali ya mwingiliano</string>
     <string name="interactive_ui_parsing_failed">Uchambuzi wa UI umeshindwa, inajaribu tena…</string>
-    <string name="settings_sponsors_monthly">Wadhamini wa kila mwezi</string>
-    <string name="settings_sponsors_past">Wadhamini wa awali</string>
     <string name="snackbar_undo">Tendua</string>
     <string name="snackbar_memory_deleted">Kumbukumbu imefutwa</string>
     <string name="snackbar_task_cancelled">Kazi imeghairiwa</string>

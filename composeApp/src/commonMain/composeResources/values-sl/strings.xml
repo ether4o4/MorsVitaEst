@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Govor</string>
     <string name="bot_message_copy_content_description">Kopiraj</string>
     <string name="bot_message_flag_content_description">Prijavi vsebino</string>
-    <string name="settings_free_tier_title">Brezplačna raven</string>
-    <string name="settings_free_tier_description">Z rastjo uporabniške baze sponzorstvo pomaga pri širitvi infrastrukture, povečanju omejitev zahtev za vse in ohranjanju aktivnega razvoja.</string>
-    <string name="settings_become_sponsor">Postanite GitHub sponzor</string>
-    <string name="settings_business_partnerships">Poslovna partnerstva</string>
-    <string name="settings_business_partnerships_description">Želite prikazati logotip svojega podjetja ali se pogovoriti o strateškem partnerstvu?</string>
-    <string name="settings_contact_sponsorship">Kontakt za strateško sponzorstvo</string>
     <string name="settings_base_url_label">URL strežnika</string>
     <string name="settings_status_checking">Preverjanje povezave...</string>
     <string name="settings_status_connected">Povezano</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Na tej platformi ni na voljo nobenih orodij.</string>
     <string name="settings_tab_general">Splošno</string>
     <string name="settings_tab_agent">Agent</string>
+    <string name="settings_tab_services">Storitve</string>
     <string name="settings_tab_tools">Orodja</string>
     <string name="settings_tab_integrations">Integracije</string>
     <string name="tools_count">%1$d orodij</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Zapusti interaktivni način</string>
     <string name="interactive_ui_parsing_failed">Razčlenjevanje UI ni uspelo, poskušam znova…</string>
-    <string name="settings_sponsors_monthly">Mesečni sponzorji</string>
-    <string name="settings_sponsors_past">Prejšnji sponzorji</string>
     <string name="snackbar_undo">Razveljavi</string>
     <string name="snackbar_memory_deleted">Spomin izbrisan</string>
     <string name="snackbar_task_cancelled">Naloga preklicana</string>

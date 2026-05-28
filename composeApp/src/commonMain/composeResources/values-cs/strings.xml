@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">P\u0159e\u010d\u00edst</string>
     <string name="bot_message_copy_content_description">Kop\u00edrovat</string>
     <string name="bot_message_flag_content_description">Nahl\u00e1sit obsah</string>
-    <string name="settings_free_tier_title">Bezplatn\u00e1 \u00farove\u0148</string>
-    <string name="settings_free_tier_description">S r\u016fstem u\u017eivatelsk\u00e9 z\u00e1kladny pom\u00e1h\u00e1 sponzorstv\u00ed \u0161k\u00e1lovat infrastrukturu, zvy\u0161ovat limity po\u017eadavk\u016f pro v\u0161echny a udr\u017eovat aktivn\u00ed v\u00fdvoj.</string>
-    <string name="settings_become_sponsor">Sta\u0148te se sponzorem na GitHubu</string>
-    <string name="settings_business_partnerships">Obchodn\u00ed partnerstv\u00ed</string>
-    <string name="settings_business_partnerships_description">Chcete zobrazit logo sv\u00e9 spole\u010dnosti nebo projednat strategick\u00e9 partnerstv\u00ed?</string>
-    <string name="settings_contact_sponsorship">Kontaktujte n\u00e1s ohledn\u011b strategick\u00e9ho sponzorstv\u00ed</string>
     <string name="settings_base_url_label">URL serveru</string>
     <string name="settings_status_checking">Kontrola p\u0159ipojen\u00ed\u2026</string>
     <string name="settings_status_connected">P\u0159ipojeno</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Na t\u00e9to platform\u011b nejsou k dispozici \u017e\u00e1dn\u00e9 n\u00e1stroje.</string>
     <string name="settings_tab_general">Obecn\u00e9</string>
     <string name="settings_tab_agent">Agent</string>
+    <string name="settings_tab_services">Slu\u017eby</string>
     <string name="settings_tab_tools">N\u00e1stroje</string>
     <string name="settings_tab_integrations">Integrace</string>
     <string name="tools_count">%1$d Nástrojů</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Ukončit interaktivní režim</string>
     <string name="interactive_ui_parsing_failed">Parsování UI selhalo, zkouším znovu…</string>
-    <string name="settings_sponsors_monthly">Měsíční sponzoři</string>
-    <string name="settings_sponsors_past">Předchozí sponzoři</string>
     <string name="snackbar_undo">Zpět</string>
     <string name="snackbar_memory_deleted">Vzpomínka smazána</string>
     <string name="snackbar_task_cancelled">Úloha zrušena</string>

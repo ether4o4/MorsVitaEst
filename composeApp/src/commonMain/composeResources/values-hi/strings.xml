@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">बोलें</string>
     <string name="bot_message_copy_content_description">कॉपी करें</string>
     <string name="bot_message_flag_content_description">सामग्री रिपोर्ट करें</string>
-    <string name="settings_free_tier_title">मुफ्त स्तर</string>
-    <string name="settings_free_tier_description">जैसे-जैसे उपयोगकर्ता आधार बढ़ता है, प्रायोजन बुनियादी ढांचे को बढ़ाने, सभी के लिए दर सीमाएं बढ़ाने और विकास को सक्रिय रखने में मदद करता है।</string>
-    <string name="settings_become_sponsor">GitHub प्रायोजक बनें</string>
-    <string name="settings_business_partnerships">व्यावसायिक साझेदारी</string>
-    <string name="settings_business_partnerships_description">अपनी कंपनी का लोगो प्रदर्शित करना चाहते हैं या रणनीतिक साझेदारी पर चर्चा करना चाहते हैं?</string>
-    <string name="settings_contact_sponsorship">रणनीतिक प्रायोजन के लिए संपर्क करें</string>
     <string name="settings_status_error_invalid_key">अमान्य API कुंजी</string>
     <string name="settings_status_error_quota_exhausted">कोटा समाप्त</string>
     <string name="settings_status_error_rate_limited">दर सीमा पर पहुंचे</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">नई चैट</string>
     <string name="settings_tools_description">AI उपकरणों को सक्षम या अक्षम करें जो आपकी ओर से कार्य कर सकते हैं।</string>
     <string name="settings_tools_none_available">इस प्लेटफॉर्म पर कोई उपकरण उपलब्ध नहीं है।</string>
+    <string name="settings_tab_services">सेवाएं</string>
     <string name="settings_tab_tools">उपकरण</string>
     <string name="settings_tab_integrations">एकीकरण</string>
     <string name="tools_count">%1$d टूल</string>
@@ -232,8 +227,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">इंटरैक्टिव मोड से बाहर निकलें</string>
     <string name="interactive_ui_parsing_failed">UI पार्सिंग विफल, पुनः प्रयास हो रहा है…</string>
-    <string name="settings_sponsors_monthly">मासिक प्रायोजक</string>
-    <string name="settings_sponsors_past">पिछले प्रायोजक</string>
     <string name="snackbar_undo">पूर्ववत करें</string>
     <string name="snackbar_memory_deleted">स्मृति हटाई गई</string>
     <string name="snackbar_task_cancelled">कार्य रद्द किया गया</string>

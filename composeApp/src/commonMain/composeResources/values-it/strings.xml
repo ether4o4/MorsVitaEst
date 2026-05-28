@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Voce</string>
     <string name="bot_message_copy_content_description">Copia</string>
     <string name="bot_message_flag_content_description">Segnala contenuto</string>
-    <string name="settings_free_tier_title">Livello Gratuito</string>
-    <string name="settings_free_tier_description">Man mano che la base utenti cresce, la sponsorizzazione aiuta a scalare l'infrastruttura, aumentare i limiti di richieste per tutti e mantenere attivo lo sviluppo.</string>
-    <string name="settings_become_sponsor">Diventa sponsor GitHub</string>
-    <string name="settings_business_partnerships">Partnership Commerciali</string>
-    <string name="settings_business_partnerships_description">Vuoi mostrare il logo della tua azienda o discutere una partnership strategica?</string>
-    <string name="settings_contact_sponsorship">Contatta per sponsorizzazione strategica</string>
     <string name="settings_status_error_invalid_key">Chiave API non valida</string>
     <string name="settings_status_error_quota_exhausted">Quota esaurita</string>
     <string name="settings_status_error_rate_limited">Limite di richieste raggiunto</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">Nuova chat</string>
     <string name="settings_tools_description">Abilita o disabilita gli strumenti IA che possono eseguire azioni per tuo conto.</string>
     <string name="settings_tools_none_available">Nessuno strumento disponibile su questa piattaforma.</string>
+    <string name="settings_tab_services">Servizi</string>
     <string name="settings_tab_tools">Strumenti</string>
     <string name="settings_tab_integrations">Integrazioni</string>
     <string name="tools_count">%1$d Strumenti</string>
@@ -232,8 +227,6 @@ Se qualcosa richiede attenzione (ricordi obsoleti, attività scadute, follow-up 
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Esci dalla modalità interattiva</string>
     <string name="interactive_ui_parsing_failed">Analisi dell'interfaccia non riuscita, nuovo tentativo…</string>
-    <string name="settings_sponsors_monthly">Sponsor mensili</string>
-    <string name="settings_sponsors_past">Sponsor precedenti</string>
     <string name="snackbar_undo">Annulla</string>
     <string name="snackbar_memory_deleted">Ricordo eliminato</string>
     <string name="snackbar_task_cancelled">Attività annullata</string>

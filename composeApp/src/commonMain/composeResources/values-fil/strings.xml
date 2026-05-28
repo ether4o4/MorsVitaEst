@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Pagsasalita</string>
     <string name="bot_message_copy_content_description">Kopyahin</string>
     <string name="bot_message_flag_content_description">I-flag ang nilalaman</string>
-    <string name="settings_free_tier_title">Libreng Tier</string>
-    <string name="settings_free_tier_description">Habang lumalaki ang base ng mga gumagamit, ang sponsorship ay tumutulong na palawakin ang infrastructure, dagdagan ang rate limits para sa lahat, at panatilihing aktibo ang development.</string>
-    <string name="settings_become_sponsor">Maging GitHub Sponsor</string>
-    <string name="settings_business_partnerships">Mga Business Partnership</string>
-    <string name="settings_business_partnerships_description">Gustong ipakita ang logo ng iyong kumpanya o talakayin ang isang strategic partnership?</string>
-    <string name="settings_contact_sponsorship">Makipag-ugnayan para sa Strategic Sponsorship</string>
     <string name="settings_base_url_label">URL ng Server</string>
     <string name="settings_status_checking">Sinusuri ang koneksyon...</string>
     <string name="settings_status_connected">Nakakonekta</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Walang available na mga tool sa platform na ito.</string>
     <string name="settings_tab_general">Pangkalahatan</string>
     <string name="settings_tab_agent">Ahente</string>
+    <string name="settings_tab_services">Mga Serbisyo</string>
     <string name="settings_tab_tools">Mga Tool</string>
     <string name="settings_tab_integrations">Mga Integrasyon</string>
     <string name="tools_count">%1$d Mga Tool</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Lumabas sa interactive mode</string>
     <string name="interactive_ui_parsing_failed">Nabigo ang pag-parse ng UI, sinusubukan muli…</string>
-    <string name="settings_sponsors_monthly">Buwanang mga sponsor</string>
-    <string name="settings_sponsors_past">Mga nakaraang sponsor</string>
     <string name="snackbar_undo">I-undo</string>
     <string name="snackbar_memory_deleted">Alaala na-delete</string>
     <string name="snackbar_task_cancelled">Gawain na-cancel</string>

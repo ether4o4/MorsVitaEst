@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Tal</string>
     <string name="bot_message_copy_content_description">Kopiera</string>
     <string name="bot_message_flag_content_description">Flagga innehåll</string>
-    <string name="settings_free_tier_title">Kostnadsfri nivå</string>
-    <string name="settings_free_tier_description">I takt med att användarbasen växer hjälper sponsring till att skala infrastrukturen, öka hastighetsgränserna för alla och hålla utvecklingen aktiv.</string>
-    <string name="settings_become_sponsor">Bli en GitHub-sponsor</string>
-    <string name="settings_business_partnerships">Affärspartnerskap</string>
-    <string name="settings_business_partnerships_description">Vill du visa ditt företags logotyp eller diskutera ett strategiskt partnerskap?</string>
-    <string name="settings_contact_sponsorship">Kontakta för strategiskt sponsorskap</string>
     <string name="settings_base_url_label">Server-URL</string>
     <string name="settings_status_checking">Kontrollerar anslutning...</string>
     <string name="settings_status_connected">Ansluten</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Inga verktyg tillgängliga på denna plattform.</string>
     <string name="settings_tab_general">Allmänt</string>
     <string name="settings_tab_agent">Agent</string>
+    <string name="settings_tab_services">Tjänster</string>
     <string name="settings_tab_tools">Verktyg</string>
     <string name="settings_tab_integrations">Integrationer</string>
     <string name="tools_count">%1$d Verktyg</string>
@@ -232,8 +227,6 @@ Om något behöver uppmärksamhet (föråldrade minnen, förfallna uppgifter, an
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Lämna interaktivt läge</string>
     <string name="interactive_ui_parsing_failed">UI-analys misslyckades, försöker igen…</string>
-    <string name="settings_sponsors_monthly">Månatliga sponsorer</string>
-    <string name="settings_sponsors_past">Tidigare sponsorer</string>
     <string name="snackbar_undo">Ångra</string>
     <string name="snackbar_memory_deleted">Minne raderat</string>
     <string name="snackbar_task_cancelled">Uppgift avbruten</string>

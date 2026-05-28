@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">語音</string>
     <string name="bot_message_copy_content_description">複製</string>
     <string name="bot_message_flag_content_description">標記內容</string>
-    <string name="settings_free_tier_title">免費版</string>
-    <string name="settings_free_tier_description">隨著使用者群的成長，贊助有助於擴展基礎設施、提高所有人的請求限制並保持開發活躍。</string>
-    <string name="settings_become_sponsor">成為 GitHub 贊助者</string>
-    <string name="settings_business_partnerships">商業合作</string>
-    <string name="settings_business_partnerships_description">想展示您的公司標誌或討論策略合作夥伴關係？</string>
-    <string name="settings_contact_sponsorship">聯繫策略贊助</string>
     <string name="settings_status_error_invalid_key">API 金鑰無效</string>
     <string name="settings_status_error_quota_exhausted">配額已用完</string>
     <string name="settings_status_error_rate_limited">達到速率限制</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">新聊天</string>
     <string name="settings_tools_description">啟用或停用可以代表您執行操作的 AI 工具。</string>
     <string name="settings_tools_none_available">此平台上沒有可用的工具。</string>
+    <string name="settings_tab_services">服務</string>
     <string name="settings_tab_tools">工具</string>
     <string name="settings_tab_integrations">整合</string>
     <string name="tools_count">%1$d 個工具</string>
@@ -232,8 +227,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">退出互動模式</string>
     <string name="interactive_ui_parsing_failed">UI 解析失敗，正在重試…</string>
-    <string name="settings_sponsors_monthly">每月贊助者</string>
-    <string name="settings_sponsors_past">先前贊助者</string>
     <string name="snackbar_undo">復原</string>
     <string name="snackbar_memory_deleted">記憶已刪除</string>
     <string name="snackbar_task_cancelled">任務已取消</string>

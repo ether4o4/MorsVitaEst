@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Reč</string>
     <string name="bot_message_copy_content_description">Kopírovať</string>
     <string name="bot_message_flag_content_description">Nahlásiť obsah</string>
-    <string name="settings_free_tier_title">Bezplatná úroveň</string>
-    <string name="settings_free_tier_description">S rastom používateľskej základne sponzorstvo pomáha škálovať infraštruktúru, zvyšovať limity požiadaviek pre všetkých a udržiavať aktívny vývoj.</string>
-    <string name="settings_become_sponsor">Staňte sa sponzorom na GitHub</string>
-    <string name="settings_business_partnerships">Obchodné partnerstvá</string>
-    <string name="settings_business_partnerships_description">Chcete zobraziť logo vašej spoločnosti alebo prediskutovať strategické partnerstvo?</string>
-    <string name="settings_contact_sponsorship">Kontaktujte nás ohľadom strategického sponzorstva</string>
     <string name="settings_base_url_label">URL servera</string>
     <string name="settings_status_checking">Kontrola pripojenia...</string>
     <string name="settings_status_connected">Pripojené</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Na tejto platforme nie sú k dispozícii žiadne nástroje.</string>
     <string name="settings_tab_general">Všeobecné</string>
     <string name="settings_tab_agent">Agent</string>
+    <string name="settings_tab_services">Služby</string>
     <string name="settings_tab_tools">Nástroje</string>
     <string name="settings_tab_integrations">Integrácie</string>
     <string name="tools_count">%1$d nástrojov</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Ukončiť interaktívny režim</string>
     <string name="interactive_ui_parsing_failed">Analýza používateľského rozhrania zlyhala, skúšam znova…</string>
-    <string name="settings_sponsors_monthly">Mesační sponzori</string>
-    <string name="settings_sponsors_past">Predchádzajúci sponzori</string>
     <string name="snackbar_undo">Späť</string>
     <string name="snackbar_memory_deleted">Spomienka vymazaná</string>
     <string name="snackbar_task_cancelled">Úloha zrušená</string>

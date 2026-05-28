@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Kalba</string>
     <string name="bot_message_copy_content_description">Kopijuoti</string>
     <string name="bot_message_flag_content_description">Pažymėti turinį</string>
-    <string name="settings_free_tier_title">Nemokamas planas</string>
-    <string name="settings_free_tier_description">Augant vartotojų bazei, rėmimas padeda plėsti infrastruktūrą, didinti užklausų limitus visiems ir palaikyti aktyvų kūrimą.</string>
-    <string name="settings_become_sponsor">Tapkite GitHub rėmėju</string>
-    <string name="settings_business_partnerships">Verslo partnerystės</string>
-    <string name="settings_business_partnerships_description">Norite parodyti savo įmonės logotipą arba aptarti strateginę partnerystę?</string>
-    <string name="settings_contact_sponsorship">Susisiekite dėl strateginio rėmimo</string>
     <string name="settings_base_url_label">Serverio URL</string>
     <string name="settings_status_checking">Tikrinamas ryšys...</string>
     <string name="settings_status_connected">Prisijungta</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Šioje platformoje nėra pasiekiamų įrankių.</string>
     <string name="settings_tab_general">Bendra</string>
     <string name="settings_tab_agent">Agentas</string>
+    <string name="settings_tab_services">Paslaugos</string>
     <string name="settings_tab_tools">Įrankiai</string>
     <string name="settings_tab_integrations">Integracijos</string>
     <string name="tools_count">%1$d Įrankiai</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Išeiti iš interaktyvaus režimo</string>
     <string name="interactive_ui_parsing_failed">UI analizė nepavyko, bandoma iš naujo…</string>
-    <string name="settings_sponsors_monthly">Mėnesiniai rėmėjai</string>
-    <string name="settings_sponsors_past">Ankstesni rėmėjai</string>
     <string name="snackbar_undo">Anuliuoti</string>
     <string name="snackbar_memory_deleted">Prisiminimas ištrintas</string>
     <string name="snackbar_task_cancelled">Užduotis atšaukta</string>

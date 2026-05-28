@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Сөйлеу</string>
     <string name="bot_message_copy_content_description">Көшіру</string>
     <string name="bot_message_flag_content_description">Мазмұнды белгілеу</string>
-    <string name="settings_free_tier_title">Тегін деңгей</string>
-    <string name="settings_free_tier_description">Пайдаланушылар базасы өскен сайын, демеушілік инфрақұрылымды кеңейтуге, барлығы үшін сұрау лимиттерін арттыруға және әзірлеуді белсенді ұстауға көмектеседі.</string>
-    <string name="settings_become_sponsor">GitHub демеушісі болыңыз</string>
-    <string name="settings_business_partnerships">Бизнес серіктестіктер</string>
-    <string name="settings_business_partnerships_description">Компанияңыздың логотипін көрсеткіңіз келе ме немесе стратегиялық серіктестікті талқылағыңыз келе ме?</string>
-    <string name="settings_contact_sponsorship">Стратегиялық демеушілік үшін байланысыңыз</string>
     <string name="settings_base_url_label">Сервер URL</string>
     <string name="settings_status_checking">Қосылым тексерілуде...</string>
     <string name="settings_status_connected">Қосылды</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Бұл платформада құралдар қолжетімсіз.</string>
     <string name="settings_tab_general">Жалпы</string>
     <string name="settings_tab_agent">Агент</string>
+    <string name="settings_tab_services">Қызметтер</string>
     <string name="settings_tab_tools">Құралдар</string>
     <string name="settings_tab_integrations">Интеграциялар</string>
     <string name="tools_count">%1$d Құрал</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Интерактивті режимнен шығу</string>
     <string name="interactive_ui_parsing_failed">UI талдауы сәтсіз аяқталды, қайта әрекет жасалуда…</string>
-    <string name="settings_sponsors_monthly">Ай сайынғы демеушілер</string>
-    <string name="settings_sponsors_past">Бұрынғы демеушілер</string>
     <string name="snackbar_undo">Болдырмау</string>
     <string name="snackbar_memory_deleted">Естелік жойылды</string>
     <string name="snackbar_task_cancelled">Тапсырма бас тартылды</string>

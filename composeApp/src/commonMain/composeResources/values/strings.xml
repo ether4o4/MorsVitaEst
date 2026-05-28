@@ -19,14 +19,6 @@
     <string name="bot_message_copy_content_description">Copy</string>
     <string name="bot_message_flag_content_description">Flag content</string>
     <string name="bot_message_regenerate_content_description">Regenerate</string>
-    <string name="settings_free_tier_title">Free Tier</string>
-    <string name="settings_free_tier_description">As the user base grows, sponsorship helps to scale infrastructure, increase rate limits for everyone, and keep development active.</string>
-    <string name="settings_become_sponsor">Become a GitHub Sponsor</string>
-    <string name="settings_sponsors_monthly">Monthly Sponsors</string>
-    <string name="settings_sponsors_past">Previous Sponsors</string>
-    <string name="settings_business_partnerships">Business Partnerships</string>
-    <string name="settings_business_partnerships_description">Want to feature your company logo or discuss a strategic partnership?</string>
-    <string name="settings_contact_sponsorship">Contact for Strategic Sponsorship</string>
     <string name="settings_base_url_label">Server URL</string>
     <string name="settings_status_checking">Checking connection...</string>
     <string name="settings_status_connected">Connected</string>
@@ -52,6 +44,7 @@
     <string name="settings_tools_none_available">No tools available on this platform.</string>
     <string name="settings_tab_general">General</string>
     <string name="settings_tab_agent">Agent</string>
+    <string name="settings_tab_services">Services</string>
     <string name="settings_tab_tools">Tools</string>
     <string name="settings_tab_sandbox">Linux Sandbox</string>
     <string name="settings_tab_integrations">Integrations</string>

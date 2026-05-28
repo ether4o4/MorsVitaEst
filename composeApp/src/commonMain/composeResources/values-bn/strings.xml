@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">স্পিচ</string>
     <string name="bot_message_copy_content_description">কপি</string>
     <string name="bot_message_flag_content_description">কন্টেন্ট ফ্ল্যাগ করুন</string>
-    <string name="settings_free_tier_title">বিনামূল্যে স্তর</string>
-    <string name="settings_free_tier_description">ব্যবহারকারী বাড়ার সাথে সাথে, স্পনসরশিপ অবকাঠামো স্কেল করতে, সবার জন্য রেট লিমিট বাড়াতে এবং উন্নয়ন সক্রিয় রাখতে সাহায্য করে।</string>
-    <string name="settings_become_sponsor">GitHub স্পনসর হন</string>
-    <string name="settings_business_partnerships">ব্যবসায়িক অংশীদারিত্ব</string>
-    <string name="settings_business_partnerships_description">আপনার কোম্পানির লোগো প্রদর্শন করতে বা কৌশলগত অংশীদারিত্ব নিয়ে আলোচনা করতে চান?</string>
-    <string name="settings_contact_sponsorship">কৌশলগত স্পনসরশিপের জন্য যোগাযোগ করুন</string>
     <string name="settings_status_error_invalid_key">অবৈধ API কী</string>
     <string name="settings_status_error_quota_exhausted">কোটা শেষ</string>
     <string name="settings_status_error_rate_limited">রেট সীমায় পৌঁছেছে</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">নতুন চ্যাট</string>
     <string name="settings_tools_description">আপনার পক্ষ থেকে কাজ করতে পারে এমন AI টুলস সক্রিয় বা নিষ্ক্রিয় করুন।</string>
     <string name="settings_tools_none_available">এই প্ল্যাটফর্মে কোনো টুল উপলব্ধ নেই।</string>
+    <string name="settings_tab_services">সেবাসমূহ</string>
     <string name="settings_tab_tools">টুলস</string>
     <string name="settings_tab_integrations">ইন্টিগ্রেশন</string>
     <string name="tools_count">%1$d টুল</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">ইন্টারেক্টিভ মোড থেকে বের হন</string>
     <string name="interactive_ui_parsing_failed">UI পার্সিং ব্যর্থ, আবার চেষ্টা করা হচ্ছে…</string>
-    <string name="settings_sponsors_monthly">মাসিক স্পনসর</string>
-    <string name="settings_sponsors_past">পূর্ববর্তী স্পনসর</string>
     <string name="snackbar_undo">পূর্বাবস্থায় ফেরান</string>
     <string name="snackbar_memory_deleted">স্মৃতি মুছে ফেলা হয়েছে</string>
     <string name="snackbar_task_cancelled">কাজ বাতিল করা হয়েছে</string>

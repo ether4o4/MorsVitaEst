@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Beszéd</string>
     <string name="bot_message_copy_content_description">Másolás</string>
     <string name="bot_message_flag_content_description">Tartalom jelölése</string>
-    <string name="settings_free_tier_title">Ingyenes szint</string>
-    <string name="settings_free_tier_description">A felhasználói bázis növekedésével a szponzorálás segít az infrastruktúra bővítésében, a kérési limitek növelésében mindenki számára, és a fejlesztés aktívan tartásában.</string>
-    <string name="settings_become_sponsor">Légy GitHub szponzor</string>
-    <string name="settings_business_partnerships">Üzleti partnerségek</string>
-    <string name="settings_business_partnerships_description">Szeretnéd megjeleníteni a céged logóját vagy stratégiai partnerségről tárgyalni?</string>
-    <string name="settings_contact_sponsorship">Kapcsolatfelvétel stratégiai szponzorációért</string>
     <string name="settings_base_url_label">Szerver URL</string>
     <string name="settings_status_checking">Kapcsolat ellenőrzése…</string>
     <string name="settings_status_connected">Csatlakozva</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Ezen a platformon nem érhetők el eszközök.</string>
     <string name="settings_tab_general">Általános</string>
     <string name="settings_tab_agent">Ügynök</string>
+    <string name="settings_tab_services">Szolgáltatások</string>
     <string name="settings_tab_tools">Eszközök</string>
     <string name="settings_tab_integrations">Integrációk</string>
     <string name="tools_count">%1$d Eszköz</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Kilépés az interaktív módból</string>
     <string name="interactive_ui_parsing_failed">A felhasználói felület elemzése sikertelen, újrapróbálás…</string>
-    <string name="settings_sponsors_monthly">Havi szponzorok</string>
-    <string name="settings_sponsors_past">Korábbi szponzorok</string>
     <string name="snackbar_undo">Visszavonás</string>
     <string name="snackbar_memory_deleted">Emlék törölve</string>
     <string name="snackbar_task_cancelled">Feladat visszavonva</string>

@@ -14,7 +14,6 @@ import com.ether4o4.morsvitaest.data.SmsSyncState
 import com.ether4o4.morsvitaest.data.ThemeMode
 import com.ether4o4.morsvitaest.inference.DownloadError
 import com.ether4o4.morsvitaest.inference.LocalModel
-import com.ether4o4.morsvitaest.network.dtos.SponsorsResponseDto
 import com.ether4o4.morsvitaest.network.tools.ToolInfo
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.ImmutableMap
@@ -49,6 +48,7 @@ enum class ConnectionStatus {
 enum class SettingsTab {
     General,
     Agent,
+    Services,
     Tools,
     Sandbox,
     Integrations,
@@ -56,7 +56,7 @@ enum class SettingsTab {
 
 @Immutable
 data class SettingsUiState(
-    val currentTab: SettingsTab = SettingsTab.Agent,
+    val currentTab: SettingsTab = SettingsTab.Services,
     val configuredServices: ImmutableList<ConfiguredServiceEntry> = persistentListOf(),
     val expandedServiceId: String? = null,
     val availableServicesToAdd: ImmutableList<Service> = persistentListOf(),
@@ -114,8 +114,6 @@ data class SettingsUiState(
     val localDownloadProgress: Float? = null,
     val localDownloadError: DownloadError? = null,
     val modelContextTokens: ImmutableMap<String, Int> = persistentMapOf(),
-    val currentSponsors: ImmutableList<SponsorsResponseDto.Sponsor> = persistentListOf(),
-    val pastSponsors: ImmutableList<SponsorsResponseDto.Sponsor> = persistentListOf(),
     val pendingDeletion: PendingDeletion? = null,
 )
 

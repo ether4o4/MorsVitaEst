@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Voix</string>
     <string name="bot_message_copy_content_description">Copier</string>
     <string name="bot_message_flag_content_description">Signaler le contenu</string>
-    <string name="settings_free_tier_title">Niveau Gratuit</string>
-    <string name="settings_free_tier_description">À mesure que la base d'utilisateurs grandit, le parrainage aide à mettre à l'échelle l'infrastructure, à augmenter les limites de requêtes pour tous et à maintenir le développement actif.</string>
-    <string name="settings_become_sponsor">Devenir sponsor GitHub</string>
-    <string name="settings_business_partnerships">Partenariats Commerciaux</string>
-    <string name="settings_business_partnerships_description">Vous souhaitez afficher le logo de votre entreprise ou discuter d'un partenariat stratégique ?</string>
-    <string name="settings_contact_sponsorship">Contact pour parrainage stratégique</string>
     <string name="settings_status_error_invalid_key">Clé API invalide</string>
     <string name="settings_status_error_quota_exhausted">Quota épuisé</string>
     <string name="settings_status_error_rate_limited">Limite de taux atteinte</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">Nouvelle conversation</string>
     <string name="settings_tools_description">Activez ou désactivez les outils IA qui peuvent effectuer des actions en votre nom.</string>
     <string name="settings_tools_none_available">Aucun outil disponible sur cette plateforme.</string>
+    <string name="settings_tab_services">Services</string>
     <string name="settings_tab_tools">Outils</string>
     <string name="settings_tab_integrations">Intégrations</string>
     <string name="tools_count">%1$d Outils</string>
@@ -232,8 +227,6 @@ Si quelque chose nécessite de l'attention (souvenirs obsolètes, tâches échue
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Quitter le mode interactif</string>
     <string name="interactive_ui_parsing_failed">Échec de l'analyse de l'interface, nouvel essai…</string>
-    <string name="settings_sponsors_monthly">Sponsors mensuels</string>
-    <string name="settings_sponsors_past">Anciens sponsors</string>
     <string name="snackbar_undo">Annuler</string>
     <string name="snackbar_memory_deleted">Souvenir supprimé</string>
     <string name="snackbar_task_cancelled">Tâche annulée</string>

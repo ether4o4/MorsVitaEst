@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">Ομιλία</string>
     <string name="bot_message_copy_content_description">Αντιγραφή</string>
     <string name="bot_message_flag_content_description">Αναφορά περιεχομένου</string>
-    <string name="settings_free_tier_title">Δωρεάν Βαθμίδα</string>
-    <string name="settings_free_tier_description">Καθώς η βάση χρηστών μεγαλώνει, η χορηγία βοηθά στην κλιμάκωση της υποδομής, στην αύξηση των ορίων αιτημάτων για όλους και στη διατήρηση της ενεργής ανάπτυξης.</string>
-    <string name="settings_become_sponsor">Γίνετε Χορηγός στο GitHub</string>
-    <string name="settings_business_partnerships">Επιχειρηματικές Συνεργασίες</string>
-    <string name="settings_business_partnerships_description">Θέλετε να προβάλετε το λογότυπο της εταιρείας σας ή να συζητήσετε μια στρατηγική συνεργασία;</string>
-    <string name="settings_contact_sponsorship">Επικοινωνία για Στρατηγική Χορηγία</string>
     <string name="settings_base_url_label">URL Διακομιστή</string>
     <string name="settings_status_checking">Έλεγχος σύνδεσης...</string>
     <string name="settings_status_connected">Συνδεδεμένο</string>
@@ -39,6 +33,7 @@
     <string name="settings_tools_none_available">Δεν υπάρχουν διαθέσιμα εργαλεία σε αυτήν την πλατφόρμα.</string>
     <string name="settings_tab_general">Γενικά</string>
     <string name="settings_tab_agent">Πράκτορας</string>
+    <string name="settings_tab_services">Υπηρεσίες</string>
     <string name="settings_tab_tools">Εργαλεία</string>
     <string name="settings_tab_integrations">Ενσωματώσεις</string>
     <string name="tools_count">%1$d Εργαλεία</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">Έξοδος από τη διαδραστική λειτουργία</string>
     <string name="interactive_ui_parsing_failed">Η ανάλυση UI απέτυχε, νέα προσπάθεια…</string>
-    <string name="settings_sponsors_monthly">Μηνιαίοι χορηγοί</string>
-    <string name="settings_sponsors_past">Προηγούμενοι χορηγοί</string>
     <string name="snackbar_undo">Αναίρεση</string>
     <string name="snackbar_memory_deleted">Η μνήμη διαγράφηκε</string>
     <string name="snackbar_task_cancelled">Η εργασία ακυρώθηκε</string>

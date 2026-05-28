@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">ਬੋਲੀ</string>
     <string name="bot_message_copy_content_description">ਕਾਪੀ</string>
     <string name="bot_message_flag_content_description">ਸਮੱਗਰੀ ਫਲੈਗ ਕਰੋ</string>
-    <string name="settings_free_tier_title">ਮੁਫ਼ਤ ਪੱਧਰ</string>
-    <string name="settings_free_tier_description">ਜਿਵੇਂ-ਜਿਵੇਂ ਉਪਭੋਗਤਾ ਅਧਾਰ ਵਧਦਾ ਹੈ, ਸਪਾਂਸਰਸ਼ਿਪ ਬੁਨਿਆਦੀ ਢਾਂਚੇ ਨੂੰ ਵਧਾਉਣ, ਸਭ ਲਈ ਦਰ ਸੀਮਾਵਾਂ ਵਧਾਉਣ ਅਤੇ ਵਿਕਾਸ ਨੂੰ ਸਰਗਰਮ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।</string>
-    <string name="settings_become_sponsor">GitHub ਸਪਾਂਸਰ ਬਣੋ</string>
-    <string name="settings_business_partnerships">ਵਪਾਰਕ ਭਾਈਵਾਲੀ</string>
-    <string name="settings_business_partnerships_description">ਆਪਣੀ ਕੰਪਨੀ ਦਾ ਲੋਗੋ ਦਿਖਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਜਾਂ ਰਣਨੀਤਕ ਭਾਈਵਾਲੀ ਬਾਰੇ ਚਰਚਾ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?</string>
-    <string name="settings_contact_sponsorship">ਰਣਨੀਤਕ ਸਪਾਂਸਰਸ਼ਿਪ ਲਈ ਸੰਪਰਕ ਕਰੋ</string>
     <string name="settings_status_error_invalid_key">ਅਵੈਧ API ਕੁੰਜੀ</string>
     <string name="settings_status_error_quota_exhausted">ਕੋਟਾ ਖਤਮ</string>
     <string name="settings_status_error_rate_limited">ਦਰ ਸੀਮਾ ਪਾਰ</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">ਨਵੀਂ ਚੈਟ</string>
     <string name="settings_tools_description">AI ਟੂਲ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ ਜੋ ਤੁਹਾਡੀ ਤਰਫੋਂ ਕਾਰਵਾਈਆਂ ਕਰ ਸਕਦੇ ਹਨ।</string>
     <string name="settings_tools_none_available">ਇਸ ਪਲੇਟਫਾਰਮ 'ਤੇ ਕੋਈ ਟੂਲ ਉਪਲਬਧ ਨਹੀਂ ਹਨ।</string>
+    <string name="settings_tab_services">ਸੇਵਾਵਾਂ</string>
     <string name="settings_tab_tools">ਟੂਲ</string>
     <string name="settings_tab_integrations">ਏਕੀਕਰਨ</string>
     <string name="tools_count">%1$d ਟੂਲ</string>
@@ -231,8 +226,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">ਇੰਟਰੈਕਟਿਵ ਮੋਡ ਤੋਂ ਬਾਹਰ ਨਿਕਲੋ</string>
     <string name="interactive_ui_parsing_failed">UI ਪਾਰਸਿੰਗ ਅਸਫਲ, ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ…</string>
-    <string name="settings_sponsors_monthly">ਮਹੀਨਾਵਾਰ ਸਪਾਂਸਰ</string>
-    <string name="settings_sponsors_past">ਪਿਛਲੇ ਸਪਾਂਸਰ</string>
     <string name="snackbar_undo">ਵਾਪਸ ਕਰੋ</string>
     <string name="snackbar_memory_deleted">ਯਾਦ ਮਿਟਾਈ ਗਈ</string>
     <string name="snackbar_task_cancelled">ਕੰਮ ਰੱਦ ਕੀਤਾ ਗਿਆ</string>

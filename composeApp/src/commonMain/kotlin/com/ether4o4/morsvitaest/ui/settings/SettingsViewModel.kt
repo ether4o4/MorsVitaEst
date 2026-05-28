@@ -12,7 +12,6 @@ import com.ether4o4.morsvitaest.data.TaskScheduler
 import com.ether4o4.morsvitaest.data.ThemeMode
 import com.ether4o4.morsvitaest.data.supportsAgenticFlows
 import com.ether4o4.morsvitaest.getBackgroundDispatcher
-import com.ether4o4.morsvitaest.httpClient
 import com.ether4o4.morsvitaest.inference.LocalModel
 import com.ether4o4.morsvitaest.isEmailSupported
 import com.ether4o4.morsvitaest.isNotificationsSupported
@@ -28,13 +27,7 @@ import com.ether4o4.morsvitaest.network.OpenAICompatibleConnectionException
 import com.ether4o4.morsvitaest.network.OpenAICompatibleInvalidApiKeyException
 import com.ether4o4.morsvitaest.network.OpenAICompatibleQuotaExhaustedException
 import com.ether4o4.morsvitaest.network.OpenAICompatibleRateLimitExceededException
-import com.ether4o4.morsvitaest.network.dtos.SponsorsResponseDto
 import com.ether4o4.morsvitaest.tools.NotificationPermissionController
-import io.ktor.client.call.body
-import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
-import io.ktor.client.request.get
-import io.ktor.http.isSuccess
-import io.ktor.serialization.kotlinx.json.json
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.collections.immutable.toImmutableMap
 import kotlinx.collections.immutable.toPersistentSet
@@ -48,7 +41,6 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import kotlinx.serialization.json.Json
 import kotlin.coroutines.CoroutineContext
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.Duration.Companion.seconds
@@ -228,7 +220,6 @@ class SettingsViewModel(
             hasCheckedInitialConnection = true
             checkAllConnections()
             connectEnabledMcpServers()
-            fetchSponsors()
         }
         // Re-read notification listener state every time the screen becomes visible:
         // the user may have toggled access in system settings while we were backgrounded.
@@ -239,30 +230,6 @@ class SettingsViewModel(
                     notificationListenerBound = dataRepository.getNotificationSyncState().listenerBound,
                     notificationPendingCount = dataRepository.getPendingNotificationCount(),
                 )
-            }
-        }
-    }
-
-    private fun fetchSponsors() {
-        viewModelScope.launch(backgroundDispatcher) {
-            try {
-                val client = httpClient {
-                    install(ContentNegotiation) {
-                        json(Json { ignoreUnknownKeys = true })
-                    }
-                }
-                val response = client.get("https://ghs.vercel.app/v3/sponsors/ether4o4")
-                if (response.status.isSuccess()) {
-                    val dto = response.body<SponsorsResponseDto>()
-                    _state.update {
-                        it.copy(
-                            currentSponsors = dto.sponsors.current.toImmutableList(),
-                            pastSponsors = dto.sponsors.past.toImmutableList(),
-                        )
-                    }
-                }
-            } catch (_: Exception) {
-                // Silently ignore - sponsors are non-critical
             }
         }
     }

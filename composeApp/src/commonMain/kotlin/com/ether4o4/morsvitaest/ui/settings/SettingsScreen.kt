@@ -126,7 +126,6 @@ import com.ether4o4.morsvitaest.inference.LocalModel
 import com.ether4o4.morsvitaest.inference.calculateDevicePerformance
 import com.ether4o4.morsvitaest.inference.estimateGpuMemoryMb
 import com.ether4o4.morsvitaest.mcp.PopularMcpServer
-import com.ether4o4.morsvitaest.network.dtos.SponsorsResponseDto
 import com.ether4o4.morsvitaest.network.tools.ToolInfo
 import com.ether4o4.morsvitaest.saveFileToDevice
 import com.ether4o4.morsvitaest.ui.MorsVitaEstClearableTextField
@@ -168,10 +167,6 @@ import morsvitaest.composeapp.generated.resources.settings_ai_mistakes_warning
 import morsvitaest.composeapp.generated.resources.settings_api_key_label
 import morsvitaest.composeapp.generated.resources.settings_api_key_optional_label
 import morsvitaest.composeapp.generated.resources.settings_base_url_label
-import morsvitaest.composeapp.generated.resources.settings_become_sponsor
-import morsvitaest.composeapp.generated.resources.settings_business_partnerships
-import morsvitaest.composeapp.generated.resources.settings_business_partnerships_description
-import morsvitaest.composeapp.generated.resources.settings_contact_sponsorship
 import morsvitaest.composeapp.generated.resources.settings_daemon_mode
 import morsvitaest.composeapp.generated.resources.settings_daemon_mode_description
 import morsvitaest.composeapp.generated.resources.settings_documentation
@@ -182,8 +177,6 @@ import morsvitaest.composeapp.generated.resources.settings_export_import_descrip
 import morsvitaest.composeapp.generated.resources.settings_export_import_title
 import morsvitaest.composeapp.generated.resources.settings_export_preview_title
 import morsvitaest.composeapp.generated.resources.settings_free_fallback
-import morsvitaest.composeapp.generated.resources.settings_free_tier_description
-import morsvitaest.composeapp.generated.resources.settings_free_tier_title
 import morsvitaest.composeapp.generated.resources.settings_heartbeat_recent
 import morsvitaest.composeapp.generated.resources.settings_import
 import morsvitaest.composeapp.generated.resources.settings_import_error
@@ -239,8 +232,6 @@ import morsvitaest.composeapp.generated.resources.settings_soul_reset
 import morsvitaest.composeapp.generated.resources.settings_soul_reset_cancel
 import morsvitaest.composeapp.generated.resources.settings_soul_reset_confirm
 import morsvitaest.composeapp.generated.resources.settings_soul_save
-import morsvitaest.composeapp.generated.resources.settings_sponsors_monthly
-import morsvitaest.composeapp.generated.resources.settings_sponsors_past
 import morsvitaest.composeapp.generated.resources.settings_status_checking
 import morsvitaest.composeapp.generated.resources.settings_status_connected
 import morsvitaest.composeapp.generated.resources.settings_status_error
@@ -252,6 +243,7 @@ import morsvitaest.composeapp.generated.resources.settings_tab_agent
 import morsvitaest.composeapp.generated.resources.settings_tab_general
 import morsvitaest.composeapp.generated.resources.settings_tab_integrations
 import morsvitaest.composeapp.generated.resources.settings_tab_sandbox
+import morsvitaest.composeapp.generated.resources.settings_tab_services
 import morsvitaest.composeapp.generated.resources.settings_tab_tools
 import morsvitaest.composeapp.generated.resources.settings_task_details_consecutive_failures
 import morsvitaest.composeapp.generated.resources.settings_task_details_created
@@ -438,7 +430,10 @@ fun SettingsScreenContent(
                 ) {
                     Spacer(Modifier.height(16.dp))
 
-                    val maxContentWidth = 900.dp
+                    val maxContentWidth = when (filteredUiState.currentTab) {
+                        SettingsTab.Services -> 500.dp
+                        else -> 900.dp
+                    }
                     Column(
                         Modifier.widthIn(max = maxContentWidth).fillMaxWidth().padding(horizontal = 16.dp),
                         horizontalAlignment = CenterHorizontally,
@@ -450,6 +445,10 @@ fun SettingsScreenContent(
 
                             SettingsTab.Agent -> {
                                 AgentContent(uiState = filteredUiState, actions = actions)
+                            }
+
+                            SettingsTab.Services -> {
+                                ServicesContent(uiState = filteredUiState, actions = actions)
                             }
 
                             SettingsTab.Integrations -> {
@@ -555,6 +554,7 @@ private fun SettingsTabSelector(
                         text = when (tab) {
                             SettingsTab.General -> stringResource(Res.string.settings_tab_general)
                             SettingsTab.Agent -> stringResource(Res.string.settings_tab_agent)
+                            SettingsTab.Services -> stringResource(Res.string.settings_tab_services)
                             SettingsTab.Tools -> stringResource(Res.string.settings_tab_tools)
                             SettingsTab.Sandbox -> stringResource(Res.string.settings_tab_sandbox)
                             SettingsTab.Integrations -> stringResource(Res.string.settings_tab_integrations)

@@ -15,12 +15,6 @@
     <string name="bot_message_speech_content_description">音声</string>
     <string name="bot_message_copy_content_description">コピー</string>
     <string name="bot_message_flag_content_description">コンテンツを報告</string>
-    <string name="settings_free_tier_title">無料プラン</string>
-    <string name="settings_free_tier_description">ユーザー数の増加に伴い、スポンサーシップはインフラの拡張、全員のレート制限の引き上げ、開発の継続に役立ちます。</string>
-    <string name="settings_become_sponsor">GitHubスポンサーになる</string>
-    <string name="settings_business_partnerships">ビジネスパートナーシップ</string>
-    <string name="settings_business_partnerships_description">会社のロゴを掲載したい、または戦略的パートナーシップについて相談したいですか？</string>
-    <string name="settings_contact_sponsorship">戦略的スポンサーシップのお問い合わせ</string>
     <string name="settings_status_error_invalid_key">無効なAPIキー</string>
     <string name="settings_status_error_quota_exhausted">クォータ超過</string>
     <string name="settings_status_error_rate_limited">レート制限中</string>
@@ -45,6 +39,7 @@
     <string name="new_chat_content_description">新しいチャット</string>
     <string name="settings_tools_description">あなたに代わってアクションを実行できるAIツールを有効または無効にします。</string>
     <string name="settings_tools_none_available">このプラットフォームでは利用可能なツールがありません。</string>
+    <string name="settings_tab_services">サービス</string>
     <string name="settings_tab_tools">ツール</string>
     <string name="settings_tab_integrations">連携</string>
     <string name="tools_count">%1$d ツール</string>
@@ -232,8 +227,6 @@
     <string name="interactive_title">MorsVitaEst</string>
     <string name="interactive_exit_content_description">インタラクティブモードを終了</string>
     <string name="interactive_ui_parsing_failed">UIの解析に失敗しました。再試行中…</string>
-    <string name="settings_sponsors_monthly">月間スポンサー</string>
-    <string name="settings_sponsors_past">過去のスポンサー</string>
     <string name="snackbar_undo">元に戻す</string>
     <string name="snackbar_memory_deleted">メモリを削除しました</string>
     <string name="snackbar_task_cancelled">タスクをキャンセルしました</string>
