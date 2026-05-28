@@ -8,8 +8,6 @@ The name means **death is life**. The project is built around that idea: finishe
 
 MorsVitaEst is not meant to be a single chatbot, a single model wrapper, or a one-off assistant app. The direction is a living agent environment that can run on a phone first, expand through connected tools, and coordinate multiple internal modes of thought without making the user manage every moving part.
 
-The near-term goal is a shippable Android app that keeps the strongest parts of the existing foundation while turning it into something clearly ours:
-
 - **Mobile-first AI runtime** for Android, with desktop and web kept as useful secondary targets
 - **Agent host support** for local models, Termux agents, PowerShell agents, MCP agents, human-approved workflows, and API-key-backed providers
 - **Local model support** through Ollama, Termux, OpenAI-compatible endpoints, and on-device engines where practical
