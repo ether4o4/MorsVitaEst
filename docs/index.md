@@ -105,6 +105,7 @@ Plus a built-in **Free** tier that requires no API key.
 
 - **[Chat & Conversations](features/chat.md)** — Message history, conversation persistence, image attachments, and speech output
 - **[Multi-Service](features/multi-service.md)** — Provider configuration, fallback chain, and connection validation
+- **[Local GGUF](features/gguf-local.md)** — llama.cpp GGUF models served from the Android Linux sandbox
 - **[Tools](features/tools.md)** — Available tools, execution flow, safety guards, and enablement
 - **[Memories](features/memories.md)** — Memory lifecycle, categories, reinforcement, and promotion
 - **[Heartbeat](features/heartbeat.md)** — Autonomous self-checks, active hours, and configuration
