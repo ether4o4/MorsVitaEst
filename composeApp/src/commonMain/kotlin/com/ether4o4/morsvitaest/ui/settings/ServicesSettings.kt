@@ -66,6 +66,7 @@ import com.ether4o4.morsvitaest.inference.DownloadError
 import com.ether4o4.morsvitaest.inference.LocalModel
 import com.ether4o4.morsvitaest.inference.calculateDevicePerformance
 import com.ether4o4.morsvitaest.inference.estimateGpuMemoryMb
+import com.ether4o4.morsvitaest.openUrl
 import com.ether4o4.morsvitaest.ui.MorsVitaEstClearableTextField
 import com.ether4o4.morsvitaest.ui.components.MorsVitaEstSlider
 import com.ether4o4.morsvitaest.ui.components.VerticalScrollbarForScroll
@@ -76,6 +77,8 @@ import com.ether4o4.morsvitaest.ui.morsvitaestAdaptiveCardColors
 import com.ether4o4.morsvitaest.ui.morsvitaestAdaptiveCardSurface
 import morsvitaest.composeapp.generated.resources.Res
 import morsvitaest.composeapp.generated.resources.ic_arrow_drop_down
+import morsvitaest.composeapp.generated.resources.litert_browse_huggingface
+import morsvitaest.composeapp.generated.resources.litert_browse_ollama
 import morsvitaest.composeapp.generated.resources.litert_cancel
 import morsvitaest.composeapp.generated.resources.litert_context_size
 import morsvitaest.composeapp.generated.resources.litert_download
@@ -83,6 +86,8 @@ import morsvitaest.composeapp.generated.resources.litert_error_download_incomple
 import morsvitaest.composeapp.generated.resources.litert_error_network
 import morsvitaest.composeapp.generated.resources.litert_error_not_enough_disk_space
 import morsvitaest.composeapp.generated.resources.litert_free_space
+import morsvitaest.composeapp.generated.resources.litert_more_models_hint
+import morsvitaest.composeapp.generated.resources.litert_more_models_title
 import morsvitaest.composeapp.generated.resources.litert_on_device_description
 import morsvitaest.composeapp.generated.resources.litert_performance_good
 import morsvitaest.composeapp.generated.resources.litert_performance_ok
@@ -730,6 +735,40 @@ private fun LiteRTSettings(
             }
         }
     }
+
+    Spacer(Modifier.height(16.dp))
+
+    // Browse and install more models. litert-community models run on-device here; any
+    // other model can run through a connected Ollama endpoint (Termux or remote).
+    Text(
+        text = stringResource(Res.string.litert_more_models_title),
+        style = MaterialTheme.typography.bodyMedium,
+        color = MaterialTheme.colorScheme.onBackground,
+    )
+    Spacer(Modifier.height(6.dp))
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        OutlinedButton(
+            onClick = { openUrl("https://huggingface.co/litert-community") },
+            modifier = Modifier.handCursor().weight(1f),
+        ) {
+            Text(stringResource(Res.string.litert_browse_huggingface))
+        }
+        OutlinedButton(
+            onClick = { openUrl("https://ollama.com/library") },
+            modifier = Modifier.handCursor().weight(1f),
+        ) {
+            Text(stringResource(Res.string.litert_browse_ollama))
+        }
+    }
+    Spacer(Modifier.height(6.dp))
+    Text(
+        text = stringResource(Res.string.litert_more_models_hint),
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+    )
 
     if (downloadError != null) {
         Spacer(Modifier.height(8.dp))
