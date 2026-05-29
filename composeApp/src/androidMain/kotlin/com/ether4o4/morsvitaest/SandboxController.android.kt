@@ -150,7 +150,7 @@ class AndroidSandboxController : SandboxController {
         val state = sandboxManager.state.value
         if (state !is SandboxState.Ready) return@withContext SANDBOX_NOT_READY
 
-        val result = sandboxManager.shellFor(sessionId).run(command, timeoutSeconds = 30)
+        val result = sandboxManager.shellFor(sessionId).run(command, timeoutSeconds = 120)
 
         val stdout = result["stdout"] as? String ?: ""
         val stderr = result["stderr"] as? String ?: ""

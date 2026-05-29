@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicBoolean
 
 private const val MAX_OUTPUT_LENGTH = 15_000
-private const val DEFAULT_TIMEOUT_SECONDS = 30L
-private const val MAX_TIMEOUT_SECONDS = 180L
+private const val DEFAULT_TIMEOUT_SECONDS = 120L
+private const val MAX_TIMEOUT_SECONDS = 1800L
 
 class ProotHandle internal constructor(
     private val process: Process,
