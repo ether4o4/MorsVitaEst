@@ -14,8 +14,8 @@ import java.util.concurrent.CompletableFuture
 import java.util.concurrent.TimeUnit
 
 private const val MAX_OUTPUT_LENGTH = 30_000
-private const val DEFAULT_TIMEOUT_SECONDS = 30L
-private const val MAX_TIMEOUT_SECONDS = 120L
+private const val DEFAULT_TIMEOUT_SECONDS = 120L
+private const val MAX_TIMEOUT_SECONDS = 1800L
 
 private val blockedPatterns = listOf(
     Regex("""rm\s+-[^\s]*r[^\s]*\s+/(?:\s|$)"""), // rm -rf /
