@@ -45,11 +45,22 @@ require_jq() {
 }
 
 cmd_provision() {
-    log "provision: installing build deps (build-base cmake git)"
-    apk add --quiet build-base cmake git curl jq >&2 || {
-        emit '{"ok":false,"error":"apk_install_failed"}'
+    log "provision: refreshing alpine package index"
+    apk_log="$LOGS_DIR/apk.log"
+    mkdir -p "$LOGS_DIR"
+    if ! apk update --quiet >"$apk_log" 2>&1; then
+        # Surface the last line of apk's stderr so the UI can show *why* (network,
+        # mirror unreachable, repo signing, etc.) instead of an opaque code.
+        detail=$(tail -n 1 "$apk_log" 2>/dev/null | tr -d '"\\' | head -c 200)
+        emit "{\"ok\":false,\"error\":\"apk_update_failed\",\"detail\":\"$detail\"}"
         return 1
-    }
+    fi
+    log "provision: installing build deps (build-base cmake git curl jq)"
+    if ! apk add --quiet build-base cmake git curl jq >"$apk_log" 2>&1; then
+        detail=$(tail -n 1 "$apk_log" 2>/dev/null | tr -d '"\\' | head -c 200)
+        emit "{\"ok\":false,\"error\":\"apk_install_failed\",\"detail\":\"$detail\"}"
+        return 1
+    fi
 
     if [ -x "$LLAMA_SERVER" ]; then
         log "provision: llama-server already built at $LLAMA_SERVER"
