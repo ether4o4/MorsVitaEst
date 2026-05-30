@@ -203,7 +203,12 @@ actual fun PlatformGgufModelsCard() {
                         Spacer(Modifier.width(8.dp))
                         if (isRunning) {
                             OutlinedButton(
-                                onClick = { runOp("Stopping…") { manager.stop(); "Stopped" } },
+                                onClick = {
+                                    runOp("Stopping…") {
+                                        manager.stop()
+                                        "Stopped"
+                                    }
+                                },
                                 modifier = Modifier.handCursor(),
                             ) { Text("Stop") }
                         } else {
