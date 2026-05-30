@@ -1,6 +1,6 @@
 # Multi-Service
 
-**Last verified:** 2026-05-14
+**Last verified:** 2026-05-30
 
 MorsVitaEst supports 26 LLM providers (plus a built-in Free tier). Each provider uses one of three API formats: **OpenAI-compatible** (most services), **Gemini native**, or **Anthropic native** -- plus **LiteRT on-device** for local inference. Users can configure multiple service instances, reorder them, and MorsVitaEst automatically falls back through the chain on failure.
 
@@ -48,7 +48,7 @@ A built-in service that requires no API key. Free is never shown in the service 
 
 Most services use the **OpenAI-compatible** chat completions format. **Gemini** uses Google's native Generative Language API. **Anthropic** uses its own Messages API with `x-api-key` header authentication and a different request/response structure. **LiteRT** runs inference on-device using Google's LiteRT LM SDK -- no HTTP, no API key, fully offline.
 
-The **OpenAI-Compatible API** service supports a custom base URL, defaulting to `localhost:11434/v1` for local Ollama setups. The base URL should include the version path segment (e.g., `http://localhost:11434/v1` or `https://my-provider.com/api/v1`), following the OpenAI SDK convention. MorsVitaEst appends only `/chat/completions` or `/models` to this base URL.
+The **OpenAI-Compatible API** service supports a custom base URL, defaulting to `localhost:11434/v1` for local Ollama setups. Users can enter either an OpenAI-style base URL with a version path (for example `http://localhost:11434/v1` or `https://my-provider.com/api/v1`) or the Ollama root URL (`http://localhost:11434`). MorsVitaEst normalizes Ollama-root entries to `/v1` for chat/model-list calls, then temporarily steps back to the root only for Ollama runtime probes such as `/api/ps`.
 
 ## Supported Services
 
@@ -84,11 +84,11 @@ The **OpenAI-Compatible API** service supports a custom base URL, defaulting to 
 
 ## Connection Validation
 
-When the user enters or changes an API key (or base URL), the app validates the connection after an 800 ms debounce and shows a status indicator: **checking**, **connected**, **invalid key**, **quota exhausted**, **rate limited**, or **connection failed**. Validation also runs for all services when the settings screen opens. Services validate by fetching their model list — Gemini, Anthropic, and OpenAI-compatible services (including LongCat) each call their respective models endpoint. On a successful connection, the available model list is refreshed.
+When the user enters or changes an API key (or base URL), the app validates the connection after an 800 ms debounce and shows a status indicator: **checking**, **connected**, **invalid key**, **quota exhausted**, **rate limited**, or **connection failed**. Validation also runs for all services when the settings screen opens. Services validate by fetching their model list — Gemini, Anthropic, and OpenAI-compatible services (including LongCat) each call their respective models endpoint. For the user-configured OpenAI-Compatible API service, the refresh also makes a best-effort Ollama `/api/ps` probe so models currently loaded/running on the phone can appear even if the normal `/models` endpoint is unavailable. On a successful connection, the available model list is refreshed.
 
 ## Model Selection
 
-When a connection is validated and models are fetched, the app auto-selects a model if none is chosen — first checking for a per-service default model (e.g. LongCat defaults to "LongCat-Flash-Lite"), then preferring "kimi-k2.5" if available, otherwise the first model in the list. Services filter their model lists:
+When a connection is validated and models are fetched, the app auto-selects a model if none is chosen — first checking whether exactly one runtime-detected OpenAI-Compatible/Ollama model is currently running on the phone, then checking for a per-service default model (e.g. LongCat defaults to "LongCat-Flash-Lite"), then preferring "kimi-k2.5" if available, otherwise the first model in the list. Runtime-detected OpenAI-Compatible models are merged ahead of the provider list and are de-duplicated by id so the running local model is easy to choose. Services filter their model lists:
 - OpenAI shows only chat-oriented models (prefix filter)
 - GroqCloud shows only models marked as active
 - Together AI filters by `type == "chat"` to exclude non-chat models (embedding, code, etc.)
@@ -100,7 +100,7 @@ The model picker modal shows each candidate as a card with consistent metadata r
 
 - **Title** (top left) — a human-readable display name from the curated catalog or the provider's API; falls back to the raw model id only when no display name is available
 - **Arena score** (top right) — LMArena Elo rating as colored text, gradient from green (>= 1400) through lime/yellow to orange (< 1250)
-- **Detail line** (below the title) — release date, parameter count, and context window joined into a single muted line separated by ` · ` (e.g. `Mar 2025 · 70B · 200K ctx`); any missing field is simply omitted from the line
+- **Detail line** (below the title) — release date, parameter count, context window, or runtime status joined into a single muted line separated by ` · ` (e.g. `Mar 2025 · 70B · 200K ctx`); any missing field is simply omitted from the line. Runtime-detected OpenAI-Compatible/Ollama models show `Running on phone` here.
 
 The card representing the currently selected model is highlighted with a filled accent background so users can identify their current choice at a glance when reopening the picker.
 
@@ -138,6 +138,7 @@ Users manage services through the settings screen:
 | `composeApp/src/commonMain/.../data/RemoteDataRepository.kt` | Fallback chain, request orchestration |
 | `composeApp/src/commonMain/.../network/Requests.kt` | HTTP clients for all three API formats |
 | `composeApp/src/commonMain/.../network/dtos/anthropic/` | Anthropic Messages API DTOs |
+| `composeApp/src/commonMain/.../network/dtos/openaicompatible/OllamaRunningModelsResponseDto.kt` | Parses Ollama `/api/ps` runtime model responses for the OpenAI-Compatible model picker |
 | `composeApp/src/commonMain/.../ui/settings/SettingsViewModel.kt` | Connection validation, service management UI logic |
 | `composeApp/src/commonMain/.../ui/chat/ChatScreen.kt` | Chat screen, renders ServiceSelector |
 | `composeApp/src/commonMain/.../ui/chat/composables/ServiceSelector.kt` | Compact service toggle dropdown |
