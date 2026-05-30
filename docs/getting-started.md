@@ -10,12 +10,18 @@ Try MorsVitaEst directly in your browser at [ether4o4.github.io/MorsVitaEst](htt
 
 | Platform | Format | Download |
 |----------|--------|----------|
-| Android | APK | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
+| Android preview | APK | [Latest rolling preview APK](https://github.com/ether4o4/MorsVitaEst/releases/download/android-preview-latest/MorsVitaEst-android-preview.apk) plus dated previews on [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
+| Android release | APK | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
+| iOS | Xcode source build only | No IPA/TestFlight preview is published by CI yet |
 | macOS | DMG | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
 | Windows | MSI | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
 | Linux | DEB | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
 | Linux | RPM | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
 | Linux | AppImage | [GitHub Releases](https://github.com/ether4o4/MorsVitaEst/releases) |
+
+### Platform preview notes
+
+The preview APK is Android-only. Each successful preview workflow creates or updates a dated `android-preview-YYYY-MM-DD` GitHub pre-release and also refreshes the rolling `android-preview-latest` direct APK link. The repository does contain an iOS app target, but CI does not currently sign or publish an iOS `.ipa` or TestFlight build, so iOS testing still requires opening `iosApp/iosApp.xcodeproj` in Xcode with an Apple signing team. Some Android/Desktop local-model flows are also intentionally hidden on iOS where the matching engine support is not wired yet.
 
 ## First Steps
 

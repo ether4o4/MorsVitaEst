@@ -24,3 +24,5 @@ fastlane/README.md
 .build-native/
 .claude
 .opencode
+# Local preview APK staging
+/preview-output/
