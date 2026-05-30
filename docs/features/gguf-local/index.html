@@ -1111,7 +1111,7 @@
 
 
 <h1 id="local-gguf-llamacpp-in-the-sandbox">Local GGUF (llama.cpp in the sandbox)</h1>
-<p><strong>Last verified:</strong> 2026-05-29</p>
+<p><strong>Last verified:</strong> 2026-05-30</p>
 <p>MorsVitaEst can run GGUF models from Hugging Face fully on-device, without a separate
 Ollama install and without the user typing anything into a terminal. It reuses two pieces
 the app already has: the <strong>Linux sandbox</strong> (Alpine + proot, see <a href="../sandbox/">sandbox.md</a>)
@@ -1167,6 +1167,10 @@ run with stderr suppressed so the manager parses clean JSON.</p>
   slow and memory-heavy. The performance heuristics in the LiteRT card do not apply here.</li>
 <li><strong>No automatic model selection in chat</strong> -- the served model is reached via its OpenAI-Compatible
   service instance; the user selects that service like any other.</li>
+<li><strong>No built-in Settings UI yet</strong> -- the runtime is wired and the <code>morsllm</code> script is auto-installed
+  into the sandbox when it reaches Ready, so the user can drive the full flow from the in-app
+  Terminal (<code>morsllm provision</code>, <code>morsllm pull &lt;repo&gt;</code>, <code>morsllm serve &lt;file&gt;</code>). A one-tap Settings
+  page for repo entry + quant pick + start/stop is the next layer on top of <code>GgufServerManager</code>.</li>
 </ul>
 <h2 id="key-files">Key Files</h2>
 <table>
