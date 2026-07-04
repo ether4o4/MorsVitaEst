@@ -662,6 +662,19 @@ actual fun launchApp(appId: String): Boolean = try {
     false
 }
 
+actual fun uninstallApp(appId: String): Boolean = try {
+    val context: Context by inject(Context::class.java)
+    // ACTION_DELETE with a package: URI shows the OS's own uninstall confirmation dialog —
+    // we never remove an app silently, the user always confirms in the system UI.
+    val intent = Intent(Intent.ACTION_DELETE, android.net.Uri.parse("package:$appId")).apply {
+        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+    }
+    context.startActivity(intent)
+    true
+} catch (_: Exception) {
+    false
+}
+
 /**
  * Launch [intent] in a freeform window sized to stop just above the taskbar — the
  * desktop-OS model the user asked for. Requires the device to have freeform windowing

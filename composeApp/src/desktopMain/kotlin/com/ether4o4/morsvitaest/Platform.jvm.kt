@@ -190,6 +190,8 @@ actual fun saveLauncherImage(name: String, bytes: ByteArray): String? = try {
 
 actual fun launchApp(appId: String): Boolean = false
 
+actual fun uninstallApp(appId: String): Boolean = false
+
 actual fun openUrl(url: String): Boolean = try {
     java.awt.Desktop.getDesktop().browse(URI(url))
     true

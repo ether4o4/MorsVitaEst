@@ -79,6 +79,10 @@ expect fun openUrl(url: String): Boolean
 /** Launch an installed app by its platform identifier (Android package name). */
 expect fun launchApp(appId: String): Boolean
 
+/** Ask the system to uninstall an installed app by package name (shows the OS uninstall
+ *  confirmation). Returns false if it couldn't be started. */
+expect fun uninstallApp(appId: String): Boolean
+
 /** A specific system settings screen the first-run setup wizard can open. */
 enum class SystemSetting {
     /** Default home-app / launcher chooser. */

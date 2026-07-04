@@ -129,32 +129,19 @@ fun WidgetsContent(onOpenAssistant: () -> Unit = {}) {
 }
 
 /**
- * The launcher's Widgets page: the live in-app widgets (weather, system, calendar,
- * note) plus the user's chosen home-screen app widgets from any installed app
- * (Android). Everything is tinted with the launcher theme and re-tints live.
+ * The launcher's Widgets page: a blank, normal-launcher-style board. The user long-presses
+ * empty space to add a home-screen widget from any installed app (Android), then drags to move
+ * and drags the corner to resize. Tinted with the launcher theme and re-tints live. The built-in
+ * live widgets (weather, system, calendar, note) still live in the clock pop-up ([WidgetsContent]).
  */
-@OptIn(ExperimentalTime::class)
 @Composable
 fun LauncherWidgetsBoard(modifier: Modifier = Modifier) {
     val settings = koinInject<AppSettings>()
     val appearance by settings.launcherAppearanceFlow.collectAsStateWithLifecycle()
     val theme = remember(appearance) { resolveLauncherTheme(settings.getLauncherTheme()) }
     val c = theme.content
-    var now by remember { mutableStateOf(Clock.System.now()) }
-    LaunchedEffect(Unit) {
-        while (true) {
-            now = Clock.System.now()
-            delay(60_000 - now.toEpochMilliseconds() % 60_000)
-        }
-    }
-    val local = now.toLocalDateTime(TimeZone.currentSystemDefault())
-    val months = listOf(
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December",
-    )
-    val monthName = months[local.month.ordinal]
 
-    Column(
+    Box(
         modifier = modifier
             .fillMaxSize()
             .then(
@@ -164,21 +151,11 @@ fun LauncherWidgetsBoard(modifier: Modifier = Modifier) {
                     Modifier.background(theme.panel)
                 },
             )
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
+            .padding(12.dp),
     ) {
-        WeatherWidget(c)
-        Spacer(Modifier.height(14.dp))
-        SystemWidget(c)
-        Spacer(Modifier.height(14.dp))
-        CalendarWidget(local.year, local.month.ordinal, local.day, monthName, c)
-        Spacer(Modifier.height(14.dp))
-        NoteWidget(settings, c)
-        Spacer(Modifier.height(14.dp))
-        // Any installed app's home-screen widgets (Android hosts these; no-op elsewhere).
-        AppWidgetsSection(contentColor = c, modifier = Modifier.fillMaxWidth())
-        Spacer(Modifier.height(8.dp))
+        // Any installed app's home-screen widgets, freely placed (Android hosts these; no-op
+        // elsewhere). This is the whole page now — a bare canvas like a normal launcher screen.
+        AppWidgetsSection(contentColor = c, modifier = Modifier.fillMaxSize())
     }
 }
 

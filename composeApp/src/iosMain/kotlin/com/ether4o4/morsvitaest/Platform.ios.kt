@@ -165,6 +165,8 @@ actual fun saveLauncherImage(name: String, bytes: ByteArray): String? = null
 
 actual fun launchApp(appId: String): Boolean = false
 
+actual fun uninstallApp(appId: String): Boolean = false
+
 actual fun openUrl(url: String): Boolean = try {
     val nsUrl = platform.Foundation.NSURL.URLWithString(url)
     if (nsUrl != null) {

@@ -56,6 +56,7 @@ import coil3.compose.AsyncImage
 import com.ether4o4.morsvitaest.InstalledApp
 import com.ether4o4.morsvitaest.data.AppSettings
 import com.ether4o4.morsvitaest.saveLauncherImage
+import com.ether4o4.morsvitaest.uninstallApp
 import io.github.vinceglb.filekit.dialogs.FileKitType
 import io.github.vinceglb.filekit.dialogs.compose.rememberFilePickerLauncher
 import io.github.vinceglb.filekit.readBytes
@@ -488,6 +489,21 @@ internal fun DesktopCanvas(
     }
 
     editItem?.let { item ->
+        // App shortcut = non-folder item whose target is a package name (not a URL or a
+        // sandbox path). Only those can be truly uninstalled from the device.
+        val isApp = !item.isFolder && item.target.isNotBlank() &&
+            !item.target.startsWith("http") && !item.target.startsWith("/")
+        val uninstall: (() -> Unit)? = if (isApp) {
+            {
+                uninstallApp(item.target)
+                // Also drop the now-dangling shortcut from the home screen.
+                items.removeAll { it.id == item.id || it.parent == item.id }
+                persist()
+                editItem = null
+            }
+        } else {
+            null
+        }
         ItemMenuDialog(
             item = item,
             onRename = { newName ->
@@ -509,6 +525,7 @@ internal fun DesktopCanvas(
                 editItem = null
             },
             onDismiss = { editItem = null },
+            onUninstall = uninstall,
         )
     }
 }
@@ -812,6 +829,7 @@ private fun ItemMenuDialog(
     onChangeImage: () -> Unit,
     onDelete: () -> Unit,
     onDismiss: () -> Unit,
+    onUninstall: (() -> Unit)? = null,
 ) {
     var name by remember(item.id) { mutableStateOf(item.label) }
     AlertDialog(
@@ -831,6 +849,11 @@ private fun ItemMenuDialog(
                     TextButton(onClick = onChangeImage) { Text("Change image…") }
                 }
                 TextButton(onClick = onDelete) { Text("Remove from home", color = Color(0xFFE2557A)) }
+                // App shortcuts also offer a true OS uninstall (routes through the system's
+                // own confirm dialog). Only shown for installed-app icons.
+                if (onUninstall != null) {
+                    TextButton(onClick = onUninstall) { Text("Uninstall app", color = Color(0xFFE2557A)) }
+                }
             }
         },
         confirmButton = {

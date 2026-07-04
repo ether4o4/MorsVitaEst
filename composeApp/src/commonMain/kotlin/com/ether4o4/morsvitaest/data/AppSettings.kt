@@ -171,6 +171,18 @@ data class ServiceInstance(
     val serviceId: String,
 )
 
+/**
+ * Free-placement rectangle for a hosted app widget on the launcher Widgets board.
+ * All four values are fractions (0..1) of the board's width/height so a layout keeps
+ * its proportions across rotation and different screen sizes.
+ */
+data class HostedWidgetRect(
+    val xFrac: Float,
+    val yFrac: Float,
+    val wFrac: Float,
+    val hFrac: Float,
+)
+
 class AppSettings(internal val settings: Settings) {
 
     // App open tracking
@@ -428,6 +440,32 @@ class AppSettings(internal val settings: Settings) {
 
     fun setHostedWidgetIds(ids: List<Int>) {
         settings.putString(KEY_HOSTED_WIDGETS, ids.joinToString(","))
+    }
+
+    // Free-placement rect for each hosted app widget on the launcher Widgets board, keyed by
+    // host id. All four values are fractions (0..1) of the board's width/height, so the layout
+    // survives rotation and different screen sizes. Widgets with no entry are auto-placed.
+    // Stored as "id:x:y:w:h" entries, comma-separated.
+    fun getHostedWidgetRects(): Map<Int, HostedWidgetRect> =
+        settings.getString(KEY_HOSTED_WIDGET_SIZES, "").split(',').mapNotNull { entry ->
+            val parts = entry.split(':')
+            val id = parts.getOrNull(0)?.trim()?.toIntOrNull()
+            val x = parts.getOrNull(1)?.trim()?.toFloatOrNull()
+            val y = parts.getOrNull(2)?.trim()?.toFloatOrNull()
+            val w = parts.getOrNull(3)?.trim()?.toFloatOrNull()
+            val h = parts.getOrNull(4)?.trim()?.toFloatOrNull()
+            if (parts.size == 5 && id != null && x != null && y != null && w != null && h != null) {
+                id to HostedWidgetRect(x, y, w, h)
+            } else {
+                null
+            }
+        }.toMap()
+
+    fun setHostedWidgetRects(rects: Map<Int, HostedWidgetRect>) {
+        settings.putString(
+            KEY_HOSTED_WIDGET_SIZES,
+            rects.entries.joinToString(",") { (id, r) -> "$id:${r.xFrac}:${r.yFrac}:${r.wFrac}:${r.hFrac}" },
+        )
     }
 
     // Start orb + app pins. Dock pins and Start-menu pins are independent
@@ -890,6 +928,7 @@ class AppSettings(internal val settings: Settings) {
         const val KEY_WIDGET_PANEL_W = "launcher_widget_panel_w"
         const val KEY_WIDGET_PANEL_H = "launcher_widget_panel_h"
         const val KEY_HOSTED_WIDGETS = "launcher_hosted_widgets"
+        const val KEY_HOSTED_WIDGET_SIZES = "launcher_hosted_widget_sizes"
 
         // Basic memory guidance shared by every chat variant. The advanced `## Structured
         // Learning` block lives in `ChatSystemPromptBuilder.DEFAULT_STRUCTURED_LEARNING_SECTION`

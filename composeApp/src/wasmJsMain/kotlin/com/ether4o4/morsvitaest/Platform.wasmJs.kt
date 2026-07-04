@@ -97,6 +97,8 @@ actual fun saveLauncherImage(name: String, bytes: ByteArray): String? = null
 
 actual fun launchApp(appId: String): Boolean = false
 
+actual fun uninstallApp(appId: String): Boolean = false
+
 actual fun openUrl(url: String): Boolean = try {
     kotlinx.browser.window.open(url, "_blank")
     true
