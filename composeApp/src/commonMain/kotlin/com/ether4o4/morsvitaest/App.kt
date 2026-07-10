@@ -57,6 +57,7 @@ import com.ether4o4.morsvitaest.ui.LightColorScheme
 import com.ether4o4.morsvitaest.ui.Theme
 import com.ether4o4.morsvitaest.ui.chat.ChatScreen
 import com.ether4o4.morsvitaest.ui.chat.ChatViewModel
+import com.ether4o4.morsvitaest.ui.components.BootSplash
 import com.ether4o4.morsvitaest.ui.components.FullScreenImageHost
 import com.ether4o4.morsvitaest.ui.foundry.FoundryDestination
 import com.ether4o4.morsvitaest.ui.foundry.FoundryHome
@@ -203,6 +204,9 @@ private fun AppContent(
             callback(appSettings.trackAppOpen())
         }
     }
+
+    // Split-second "NeverSoft Services" boot splash, shown once over everything.
+    var showBootSplash by remember { mutableStateOf(true) }
 
     // First-run welcome tour + the always-available help bubble/sheet.
     var showTour by remember { mutableStateOf(false) }
@@ -559,6 +563,12 @@ private fun AppContent(
                                 showSetup = false
                             },
                         )
+                    }
+
+                    // Boot splash draws last so it covers the whole shell, then
+                    // fades out and removes itself after a split second.
+                    if (showBootSplash) {
+                        BootSplash(onFinished = { showBootSplash = false })
                     }
                 }
             }
