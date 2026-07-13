@@ -414,11 +414,11 @@ class AppSettings(internal val settings: Settings) {
     // the persistent overlay taskbar can observe it and re-read. The overlay bar is a
     // long-lived view (not recreated like the in-app launcher), so it can't see the change
     // any other way.
-    private val _launcherAppearance = MutableStateFlow(0)
-    val launcherAppearanceFlow: StateFlow<Int> = _launcherAppearance
+    private val launcherAppearanceState = MutableStateFlow(0)
+    val launcherAppearanceFlow: StateFlow<Int> = launcherAppearanceState
 
     private fun bumpLauncherAppearance() {
-        _launcherAppearance.value++
+        launcherAppearanceState.value++
     }
 
     // Start orb + app pins. Dock pins and Start-menu pins are independent

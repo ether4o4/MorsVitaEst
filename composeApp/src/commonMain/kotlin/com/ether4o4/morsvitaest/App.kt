@@ -58,6 +58,7 @@ import com.ether4o4.morsvitaest.ui.Theme
 import com.ether4o4.morsvitaest.ui.chat.ChatScreen
 import com.ether4o4.morsvitaest.ui.chat.ChatViewModel
 import com.ether4o4.morsvitaest.ui.components.FullScreenImageHost
+import com.ether4o4.morsvitaest.ui.components.NeverSoftSplash
 import com.ether4o4.morsvitaest.ui.foundry.FoundryDestination
 import com.ether4o4.morsvitaest.ui.foundry.FoundryHome
 import com.ether4o4.morsvitaest.ui.foundry.FoundryHomeViewModel
@@ -203,6 +204,9 @@ private fun AppContent(
             callback(appSettings.trackAppOpen())
         }
     }
+
+    // NeverSoft Services CRT boot splash, shown once over everything at launch.
+    var showBootSplash by remember { mutableStateOf(true) }
 
     // First-run welcome tour + the always-available help bubble/sheet.
     var showTour by remember { mutableStateOf(false) }
@@ -559,6 +563,13 @@ private fun AppContent(
                                 showSetup = false
                             },
                         )
+                    }
+
+                    // Boot splash draws last so it covers the whole shell, then
+                    // runs its ~2.5s CRT boot sequence, fades out, and removes
+                    // itself. It never blocks input — it always hands off here.
+                    if (showBootSplash) {
+                        NeverSoftSplash(onDone = { showBootSplash = false })
                     }
                 }
             }
